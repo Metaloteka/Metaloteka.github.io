@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+
+</html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="theme-color" content="#678c92" />
+	<title>UI-KIT</title>
+
+<body class="body">
+	<div class="container">
+		<header class="header">
+			<div class="row align-items-xl-center"><img class="header__logo" src="/images/logo.svg" alt="логотип metaloteka" />
+				<div class="contact-header ml-xl-60"><img class="contact-header__icon" src="/images/icon-pin-map.svg" alt="icon" /><span class="text contact-header__text">Регион</span><span class="contact-header__contact">г. Москва</span></div>
+				<div class="contact-header ml-xl-35"><span class="text contact-header__text">Телефон клиентской поддержки</span><a class="contact-header__contact" href="tel:+74955456420">+7 495 545 64 20</a></div>
+				<div class="contact-header ml-xl-35"><span class="text contact-header__text">Адрес электронной почты</span><a class="contact-header__contact" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a></div>
+				<div class="header__shipped"><span class="header__number-shipped">245 т</span>
+					<div class="header__divider-shipped"></div><span class="text">отгружено за неделю</span>
+				</div>
+				<div class="header__wrap-basket"><button class="header__basket header__basket_full">
+						<div class="header__basket-num">120</div>
+						<div class="header__basket-icon"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<clipPath id="dl3q6myura">
+										<path d="M4500 0v5500H0V0h4500z" />
+									</clipPath>
+									<clipPath id="a5dmji0u5b">
+										<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+									</clipPath>
+									<clipPath id="hx4p2o3vkc">
+										<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+									</clipPath>
+								</defs>
+								<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+									<g>
+										<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+											<path d="M0 0h68.735v49.434H0V0z" />
+										</g>
+										<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+											<path d="M0 0h8.588v8.595H0V0z" />
+										</g>
+										<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+											<path d="M0 0h8.588v8.595H0V0z" />
+										</g>
+									</g>
+								</g>
+							</svg></div>
+					</button></div>
+			</div>
+			<div class="row">
+				<p>1werwer</p>
+				<p>2werwer</p>
+				<p>Российский металлопрокат</p>
+			</div>
+			<div class="row">
+				<nav>Ссылки</nav>
+			</div>
+			<div class="row">
+				<p>Поиск</p>
+			</div>
+		</header>
+		<main class="main">
+			<style>
+				.h1 {
+					font-size: var(--fs-title1);
+					font-weight: 900;
+					text-align: center
+				}
+
+				.h2 {
+					font-size: var(--fs-title3);
+					text-align: center
+				}
+
+				.h3 {
+					--white: #ffffff9f;
+					font-size: var(--fs-title5);
+					color: var(--white)
+				}
+
+				.h4 {
+					font-size: var(--fs-22)
+				}
+
+				.p {
+					font-size: var(--fs-big)
+				}
+
+				.p code {
+					--white: #ffffff36;
+					font-family: monospace;
+					font-weight: 700;
+					background: var(--white);
+					padding: 0 4px;
+					border-radius: 15px
+				}
+			</style>
+			<h1 class="h1">~ UI-KIT Metaloteka ~</h1>
+			<section class="section-shared-component">
+				<h2 class="h2">Shared component:</h2>
+				<style>
+					.example-container {
+						height: 16px
+					}
+
+					.example-container .container {
+						--wet-asphalt: #46464692;
+						position: absolute;
+						left: 0;
+						background: var(--wet-asphalt)
+					}
+				</style>
+				<h3 class="h3 mt-20">Компонент Container</h3>
+				<p class="p">- Данный компонент вызывается как <code>+Container</code>.</p>
+				<p class="p">- Компонент Container уже изначально имеет определенные стили. Данные стили позицианируют весь контент сайта в завернутом контейнере.</p>
+				<p class="p">- Дополнительных параметров не имеет.</p>
+				<div class="example-container mt-10">
+					<div class="container">
+						<div>Пример использования</div>
+					</div>
+				</div>
+				<style>
+					.example-row div:not(.row) {
+						--wet-asphalt: #46464692;
+						background: var(--wet-asphalt);
+						padding-inline: 10px
+					}
+				</style>
+				<h3 class="h3 mt-20">Компонент Row</h3>
+				<p class="p">- Данный компонент вызывается как <code>+Row</code>.</p>
+				<p class="p">- Данный компонент имеет заранее определенные стили. При переполнении он переносит контент внутри на новую строчку.</p>
+				<p class="p">- Принимает следующие параметры <code>rowCols</code>, <code>gap</code>, <code>justify</code>, <code>alignItems</code>.</p>
+				<div class="example-row mt-10">
+					<h4 class="h4">Использования компонента без параметров</h4>
+					<div class="row">
+						<div>Пример использования компонента без параметров</div>
+						<div>Пример использования компонента без параметров</div>
+						<div>Пример использования компонента без параметров</div>
+						<div>Пример использования компонента без параметров</div>
+						<div>Пример использования компонента без параметров</div>
+					</div>
+					<h4 class="h4 mt-10">Использования компонента с параметром - rowCols</h4>
+					<div class="row row-cols-3">
+						<div>Пример использования компонента с rowCols</div>
+						<div>Пример использования компонента с rowCols</div>
+						<div>Пример использования компонента с rowCols</div>
+						<div>Пример использования компонента с rowCols</div>
+						<div>Пример использования компонента с rowCols</div>
+					</div>
+					<h4 class="h4 mt-10">Использования компонента с параметром - gap</h4>
+					<div class="row cg-20 rg-10">
+						<div>Пример использования компонента с gap</div>
+						<div>Пример использования компонента с gap</div>
+						<div>Пример использования компонента с gap</div>
+						<div>Пример использования компонента с gap</div>
+						<div>Пример использования компонента с gap</div>
+					</div>
+					<h4 class="h4 mt-10">Использования компонента с параметром - rowCols и gap</h4>
+					<div class="row row-cols-3 cg-20 rg-10">
+						<div>Пример использования компонента с rowCols и gap</div>
+						<div>Пример использования компонента с rowCols и gap</div>
+						<div>Пример использования компонента с rowCols и gap</div>
+						<div>Пример использования компонента с rowCols и gap</div>
+						<div>Пример использования компонента с rowCols и gap</div>
+					</div>
+				</div>
+				<style>
+					.example-text__properties {
+						--wet-asphalt: #46464692;
+						background: var(--wet-asphalt);
+						display: flex;
+						flex-direction: column
+					}
+
+					.example-text__properties_dark {
+						--white: #f4f2f2;
+						background: var(--white)
+					}
+				</style>
+				<h3 class="h3 mt-20">Компонент Text</h3>
+				<p class="p">- Данный компонент вызывается как <code>+Text</code>.</p>
+				<p class="p">- Данный компонент имеет заранее определенные стили.</p>
+				<p class="p">- Принимает следующие параметры в объект bem - <code>size</code>, <code>color</code>.</p>
+				<p class="p">- Принимает следующие параметры в объект opt - <code>p</code>. Параметр p является boolean. Если передать ему true, то текст будет обернут в тег параграфа.</p>
+				<div class="example-text mt-10">
+					<h4 class="h4 mt-10">Использования компонента с параметром size</h4>
+					<div class="example-text__properties"><span class="text">Пример использования без параметров. Имеет font-size: 14px</span><span class="text text_small">Пример использования для font-size: 12px</span><span class="text text_big">Пример использования для font-size: 16px</span><span class="text text_fs-18">Пример использования для font-size: 18px</span><span class="text text_fs-20">Пример использования для font-size: 20px</span><span class="text text_fs-22">Пример использования для font-size: 22px</span><span class="text text_fs-24">Пример использования для font-size: 24px</span><span class="text text_fs-26">Пример использования для font-size: 26px</span><span class="text text_fs-28">Пример использования для font-size: 28px</span><span class="text text_fs-30">Пример использования для font-size: 30px</span><span class="text text_fs-32">Пример использования для font-size: 32px</span><span class="text text_fs-36">Пример использования для font-size: 36px</span><span class="text text_fs-38">Пример использования для font-size: 38px</span><span class="text text_fs-40">Пример использования для font-size: 40px</span><span class="text text_fs-46">Пример использования для font-size: 46px</span><span class="text text_fs-50">Пример использования для font-size: 50px</span><span class="text text_fs-54">Пример использования для font-size: 54px</span><span class="text text_fs-72">Пример использования для font-size: 72px</span></div>
+					<h4 class="h4 mt-10">Использования компонента с параметром size и color</h4>
+					<div class="example-text__properties example-text__properties_dark"><span class="text text_fs-22 text_wet-asphalt">Пример использования для font-size: 22px и color - wet-asphalt</span></div>
+					<h4 class="h4 mt-10">Использования компонента с параметром size и p</h4>
+					<div class="example-text__properties">
+						<p class="text text_fs-22">Пример использования для font-size: 22px и opt: p</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer class="footer footer_ml-xl-60">
+		<div class="container">
+			<div class="footer__footer-icons">
+				<div class="footer__metaloteka-icons">
+					<div class="footer__icons-font"><img class="footer__logo" src="/images/metaloteka-logo.svg" alt="логотип metaloteka" />
+						<h3 class="footer__icon-subtitle">Металлопрокат оптом и в розницу</h3>
+					</div><a class="footer__metaloteka-logo" href="#"><img class="footer__metaloteka-logo_item" src="/images/logo.svg" alt="Logo" /></a>
+					<div class="footer__social"><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-mail.svg" alt="Mail" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-vk.svg" alt="Vk" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-tg.svg" alt="Telegram" /></a></div>
+				</div>
+				<div class="footer__clients">
+					<h2 class="footer__clients-title">Клиентам</h2><a class="footer__clients-item" href="#">О компании</a><a class="footer__clients-item" href="#">Каталог продукции</a><a class="footer__clients-item" href="#">Прайс-лист</a><a class="footer__clients-item" href="#">Доставка</a><a class="footer__clients-item" href="#">Оплата</a><a class="footer__clients-item" href="#">Сотрудничество</a><a class="footer__clients-item" href="#">Оптовые продажи</a><a class="footer__clients-item" href="#">Реквезиты организации</a><a class="footer__clients-item" href="#">Контакты</a>
+				</div>
+				<div class="footer__catalog">
+					<h2 class="footer__catalog-title">Каталог</h2><a class="footer__catalog-item" href="#">Листовой прокат</a><a class="footer__catalog-item" href="#"> Арматурный прокат</a><a class="footer__catalog-item" href="#"> Метизная продукция</a><a class="footer__catalog-item" href="#"> Трубный прокат</a><a class="footer__catalog-item" href="#"> Нержавеющая сталь</a><a class="footer__catalog-item" href="#"> Цветные металлы</a>
+				</div>
+				<div class="footer__contacts">
+					<div class="footer__address-wrapper"><span class="footer__subtitle">Москва</span><span class="footer__adress-subtitle">г.Москва, ул.Воскресенская, 84 Бизнес-центр «Чистые пруды»</span></div>
+					<div class="footer__messenger-phone"><a class="footer__subtitle" href="tel:+799999999999">+7 495 545 64 20</a><span class="footer__messenger-subtitle">Телефон клиентской поддержки</span></div>
+					<div class="footer__messenger"><a class="footer__subtitle" href="mailto:renat@metaloteka.ru">client@metaloteka.ru</a><span class="footer__messenger-subtitle">Адрес электронной почты</span></div>
+					<div class="footer__messenger-wiber"><a class="footer__subtitle" href="viber://chat?number=%2B380950000000">Whatsapp | Viber</a><span class="footer__messenger-subtitle">Напишите нам в мессенджер</span></div>
+				</div>
+			</div>
+			<div class="footer__requesites">
+				<div class="footer__requesites-info"><img class="footer__requesites-img" src="/images/icon-ruble.svg" alt="логотип metaloteka" />
+					<div class="footer__individuals"><span class="footer__title-individuals">Физические лица</span><span class="footer__subtitle-individuals">Вы можете оплатить заказ наличными в нашем офисе или онлайн</span></div>
+					<div class="footer__legal-entities"><span class="footer__title-individuals">ИП и ООО</span><span class="footer__subtitle-individuals">Вы можете оплатить по сформированному счету после оформления заказа</span></div>
+				</div>
+				<div class="footer__sber-icons"><img class="footer__logo-sberbank" src="/images/logo-sberbank.svg" alt="sber" /><img class="footer__logo-payment" src="/images/payment-logo-sbp.svg" alt="sber" /><img class="footer__logo-mir" src="/images/logo-mirlogo.svg" alt="mir" /></div>
+				<div class="footer__button-wrapper"><button class="footer__button">Написать</button></div>
+			</div><span class="footer__info-metaloteka">Metaloteka, 2021. Все ресурсы сайта www.metaloteka.ru, включая (но не ограничиваясь) текстовую, графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные знаки, доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную собственность, защищены российским законодательством и международными соглашениями об охране авторских прав и интеллектуальной собственности. Указанные на сайте цены не являются публичной офертой (ст. 435 ГК РФ).</span>
+			<div class="footer__privacy-policy-wrapper">
+				<div class="footer__privacy-policy-info"><a class="footer__privacy-policy" href="#">Политика конфиденциальности</a><a class="footer__privacy-policy-map" href="#">Карта сайта</a></div><a class="footer__privacy-policy-img-wrapper" href="metaloteka.ru"><img class="footer__privacy-policy-img" src="/images/metaloteka-font-logo.svg" alt="логотип metaloteka" /></a><a class="footer__privacy-policy-web" href="#">Сайт разработан веб-студией Брэнд Бэйкер</a>
+			</div>
+		</div>
+	</footer>
+	<script defer="defer" src="/js/app.js"></script>
+</body>
+<link href="/css/app.css" rel="stylesheet">
+</head>
