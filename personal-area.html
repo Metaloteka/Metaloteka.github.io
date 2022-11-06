@@ -13,10 +13,14 @@
 <body class="body">
 	<div class="container">
 		<header class="header">
-			<div class="row align-items-xl-center"><img class="header__logo" src="/images/logo.svg" alt="логотип metaloteka" />
-				<div class="contact-header ml-xl-60"><img class="contact-header__icon" src="/images/icon-pin-map.svg" alt="icon" /><span class="text contact-header__text">Регион</span><span class="contact-header__contact">г. Москва</span></div>
-				<div class="contact-header ml-xl-35"><span class="text contact-header__text">Телефон клиентской поддержки</span><a class="contact-header__contact" href="tel:+74955456420">+7 495 545 64 20</a></div>
-				<div class="contact-header ml-xl-35"><span class="text contact-header__text">Адрес электронной почты</span><a class="contact-header__contact" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a></div>
+			<div class="row align-items-xl-center">
+				<div class="header__connection">
+					<div class="header__line"></div><img class="header__logo" src="/images/logo.svg" alt="логотип metaloteka" />
+					<div class="header__line"></div>
+					<div class="contact-header ml-xl-60"><img class="contact-header__icon" src="/images/icon-pin-map.svg" alt="icon" /><span class="text contact-header__text">Регион доставки</span><span class="contact-header__contact">г.Москва</span></div>
+					<div class="contact-header ml-xl-20"><span class="text contact-header__text">Телефон клиентской поддержки</span><a class="contact-header__contact" href="tel:+74955456420">+7 495 545 64 20</a></div>
+					<div class="contact-header ml-xl-20"><span class="text contact-header__text">Адрес электронной почты</span><a class="contact-header__contact" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a></div>
+				</div>
 				<div class="header__shipped"><span class="header__number-shipped">245 т</span>
 					<div class="header__divider-shipped"></div><span class="text">отгружено за неделю</span>
 				</div>
@@ -50,16 +54,24 @@
 							</svg></div>
 					</button></div>
 			</div>
-			<div class="row">
-				<p>1werwer</p>
-				<p>2werwer</p>
-				<p>Российский металлопрокат</p>
+			<div class="contact-header-warning">
+				<p class="contact-header-warning__title">Российский металлопрокат</p>
+				<div class="contact-header-warning__line"></div>
+				<div class="contact-header-warning__right"><img class="contact-header-warning__img" src="/images/icon-warning.svg" alt="icon" />
+					<p class="contact-header-warning__warning">В связи с высокой волатильность отпускных цен комбинатов актуальные цены на металл уточняйте у менеджеров</p>
+				</div>
+				<div class="contact-header-warning__line"></div>
 			</div>
-			<div class="row">
-				<nav>Ссылки</nav>
+			<div class="header__nav">
+				<div class="row">
+					<div class="header__nav-link"><a class="header__link" href="#">О компании</a><a class="header__link" href="/catalog.html">Каталог продукции</a><a class="header__link" href="#">Доставка</a><a class="header__link" href="/cart-page.html">Оплата</a><a class="header__link" href="#">Госты</a><a class="header__link" href="/contacts.html">Контакты</a></div>
+					<div class="header__date">
+						<div class="header__name">Петров Иван</div><span class="header__stick">|</span><a class="header__exit">Выйти</a>
+					</div>
+				</div>
 			</div>
-			<div class="row">
-				<p>Поиск</p>
+			<div class="row"><button class="header__catalog">каталог</button>
+				<div class="header__right"><input class="header__search" placeholder="Арматурный прокат или Гост" /><button class="header__button">Поиск</button></div>
 			</div>
 		</header>
 		<main class="main">
@@ -67,49 +79,145 @@
 				<div class="section-breadcrumbs__inner"><a class="section-breadcrumbs__link" href="/">Главная</a><span class="section-breadcrumbs__link">/</span><span class="section-breadcrumbs__link">Личный кабинет</span></div><a class="section-breadcrumbs__back" href="#">Назад</a>
 			</section>
 			<section class="section-orders-list">
-				<p>TESTING PERSONAL AREAD TEST</p>
-				<div class="row row-cols-5">
-					<div>ddfgfdg</div>
-					<p>ssdf</p>
+				<div class="row">
+					<div class="section-orders-list__left">
+						<div class="card">
+							<div class="title"><span class="text text_fs-28 text_wet-asphalt">Заказ №210522/1-MT</span>
+								<h2 class="title__firm">ИП Петров Иван</h2>
+							</div>
+							<hr class="line" noshade="noshade" />
+							<div class="call">
+								<div class="summ summ_left">
+									<p class="summ__total">Итого:</p>
+									<div class="summ__total summ__total_summ">
+										<p class="summ__number summ__number_summ">6 233 944</p>
+										<p class="summ__ruble">р.</p>
+									</div>
+									<div class="summ__line"></div>
+									<p class="summ__total">≈ 4,548 т</p>
+								</div>
+								<div class="summ summ_center">
+									<p class="summ__total summ__total_bold">Всего наименований (12) на сумму 6 233 944 руб. (в том числе НДС 20%)</p>
+									<p class="summ__total summ__total_small">Сто пятьдесят восемь миллионов двести тридцать три тысячи девятьсот сорок четыре руб. 00 копеек</p>
+								</div>
+								<div class="summ summ_right">
+									<p class="summ__total summ__total_mini">Копия документов на оплату отправлена на вашу электронную почту. В течении ближайшего времени с вами свяжеться менеджер, чтобы обсудить делали заказа.</p>
+									<div class="summ__total summ__total_wrap">
+										<div class="summ__link"><a class="summ__download" href="!#">Скачать счет PDF</a><span class="summ__date">(действителен до 21.05.2022)</span></div>
+										<div class="summ__link"><a class="summ__download" href="!#">Бланк заказа PDF</a><span class="summ__date">(действителен до 21.05.2022)</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="title"><span class="text text_fs-28 text_wet-asphalt">Заказ №210522/2-MT</span>
+								<h2 class="title__firm">Петров Иван</h2>
+							</div>
+							<hr class="line" noshade="noshade" />
+							<div class="call">
+								<div class="summ summ_left">
+									<p class="summ__total">Итого:</p>
+									<div class="summ__total summ__total_summ">
+										<p class="summ__number summ__number_summ">6 233 944</p>
+										<p class="summ__ruble">р.</p>
+									</div>
+									<div class="summ__line"></div>
+									<p class="summ__total">≈ 4,548 т</p>
+								</div>
+								<div class="summ summ_center">
+									<p class="summ__total summ__total_bold">Всего наименований (12) на сумму 6 233 944 руб. (в том числе НДС 20%)</p>
+									<p class="summ__total summ__total_small">Сто пятьдесят восемь миллионов двести тридцать три тысячи девятьсот сорок четыре руб. 00 копеек</p>
+								</div>
+								<div class="summ summ_right">
+									<p class="summ__total summ__total_mini">Копия документов на оплату отправлена на вашу электронную почту. В течении ближайшего времени с вами свяжеться менеджер, чтобы обсудить делали заказа.</p>
+									<div class="summ__total summ__total_wrap">
+										<div class="summ__link"></div>
+										<div class="summ__link"><a class="summ__download" href="!#">Бланк заказа PDF</a><span class="summ__date">(действителен до 21.05.2022)</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card card_hide">
+							<div class="title"><span class="text text_fs-28 text_wet-asphalt">Заказ №210522/1-MT</span>
+								<h2 class="title__firm">ООО «Черномор»</h2>
+							</div>
+							<hr class="line" noshade="noshade" />
+							<div class="call">
+								<div class="summ summ_left">
+									<p class="summ__total">Итого:</p>
+									<div class="summ__total summ__total_summ">
+										<p class="summ__number summ__number_summ">6 233 944</p>
+										<p class="summ__ruble">р.</p>
+									</div>
+									<div class="summ__line"></div>
+									<p class="summ__total">≈ 4,548 т</p>
+								</div>
+								<div class="summ summ_center">
+									<p class="summ__total summ__total_bold">Всего наименований (12) на сумму 6 233 944 руб. (в том числе НДС 20%)</p>
+									<p class="summ__total summ__total_small">Сто пятьдесят восемь миллионов двести тридцать три тысячи девятьсот сорок четыре руб. 00 копеек</p>
+								</div>
+								<div class="summ summ_right">
+									<p class="summ__total summ__total_mini">Копия документов на оплату отправлена на вашу электронную почту. В течении ближайшего времени с вами свяжеться менеджер, чтобы обсудить делали заказа.</p>
+									<div class="summ__total summ__total_wrap">
+										<div class="summ__link"><a class="summ__download" href="!#">Скачать счет PDF</a><span class="summ__date">(действителен до 21.05.2022)</span></div>
+										<div class="summ__link"><a class="summ__download" href="!#">Бланк заказа PDF</a><span class="summ__date">(действителен до 21.05.2022)</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-orders-list__right">slider</div>
 				</div>
 			</section>
 		</main>
 	</div>
-	<footer class="footer footer_ml-xl-60">
-		<div class="container">
-			<div class="footer__footer-icons">
-				<div class="footer__metaloteka-icons">
-					<div class="footer__icons-font"><img class="footer__logo" src="/images/metaloteka-logo.svg" alt="логотип metaloteka" />
-						<h3 class="footer__icon-subtitle">Металлопрокат оптом и в розницу</h3>
-					</div><a class="footer__metaloteka-logo" href="#"><img class="footer__metaloteka-logo_item" src="/images/logo.svg" alt="Logo" /></a>
-					<div class="footer__social"><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-mail.svg" alt="Mail" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-vk.svg" alt="Vk" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-tg.svg" alt="Telegram" /></a></div>
+	<div class="bg-footer">
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__footer-top">
+					<div class="footer__metaloteka-icons">
+						<div class="footer__icons-font"><img class="footer__logo" src="/images/metaloteka-logo.svg" alt="логотип metaloteka" />
+							<p class="footer__icon-subtitle">Металлопрокат оптом и в розницу</p>
+						</div><a class="footer__metaloteka-logo" href="#"><img class="footer__metaloteka-logo_item" src="/images/logo.svg" alt="Logo" /></a>
+						<div class="footer__social"><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-mail.svg" alt="Mail" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-vk.svg" alt="Vk" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-tg.svg" alt="Telegram" /></a></div>
+					</div>
+					<div class="footer__clients">
+						<h2 class="footer__clients-title">Клиентам</h2><a class="footer__clients-item" href="#">О компании</a><a class="footer__clients-item" href="#">Каталог продукции</a><a class="footer__clients-item" href="#">Прайс-лист</a><a class="footer__clients-item" href="#">Доставка</a><a class="footer__clients-item" href="#">Оплата</a><a class="footer__clients-item" href="#">Сотрудничество</a><a class="footer__clients-item" href="#">Оптовые продажи</a><a class="footer__clients-item" href="#">Реквезиты организации</a><a class="footer__clients-item" href="/contacts.html">Контакты</a>
+					</div>
+					<div class="footer__catalog">
+						<h2 class="footer__catalog-title">Каталог</h2><a class="footer__catalog-item" href="#">Листовой прокат</a><a class="footer__catalog-item" href="#"> Арматурный прокат</a><a class="footer__catalog-item" href="#"> Метизная продукция</a><a class="footer__catalog-item" href="#"> Трубный прокат</a><a class="footer__catalog-item" href="#"> Нержавеющая сталь</a><a class="footer__catalog-item" href="#"> Цветные металлы</a>
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__address-wrapper">
+							<p class="footer__subtitle" href="">Москва</p>
+							<p class="footer__messenger-title">г.Москва, ул.Воскресенская, 84 Бизнес-центр «Чистые пруды»</p>
+						</div>
+						<div class="footer__address-wrapper"><a class="footer__subtitle" href="+74955456420">+7 495 545 64 20</a>
+							<p class="footer__messenger-subtitle">Телефон клиентской поддержки</p>
+						</div>
+						<div class="footer__address-wrapper"><a class="footer__subtitle" href="client@metaloteka.ru">client@metaloteka.ru</a>
+							<p class="footer__messenger-subtitle">Адрес электронной почты</p>
+						</div>
+						<div class="footer__address-wrapper">
+							<p class="footer__subtitle" href="">Whatsapp |</p>
+							<p class="footer__messenger-subtitle">Напишите нам в мессенджер</p>
+						</div>
+					</div>
 				</div>
-				<div class="footer__clients">
-					<h2 class="footer__clients-title">Клиентам</h2><a class="footer__clients-item" href="#">О компании</a><a class="footer__clients-item" href="#">Каталог продукции</a><a class="footer__clients-item" href="#">Прайс-лист</a><a class="footer__clients-item" href="#">Доставка</a><a class="footer__clients-item" href="#">Оплата</a><a class="footer__clients-item" href="#">Сотрудничество</a><a class="footer__clients-item" href="#">Оптовые продажи</a><a class="footer__clients-item" href="#">Реквезиты организации</a><a class="footer__clients-item" href="#">Контакты</a>
+				<div class="footer__requesites">
+					<div class="footer__requesites-info"><img class="footer__requesites-img" src="/images/icon-ruble.svg" alt="iconRuble" />
+						<div class="footer__individuals"><span class="footer__title-individuals">Физические лица</span><span class="footer__subtitle-individuals">Вы можете оплатить заказ наличными в нашем офисе или онлайн</span></div>
+						<div class="footer__legal-entities"><span class="footer__title-individuals">ИП и ООО</span><span class="footer__subtitle-individuals">Вы можете оплатить по сформированному счету после оформления заказа</span></div>
+					</div>
+					<div class="footer__bank-icons"><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/logo-sberbank.svg" alt="logo-sberbank" /></a><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/payment-logo-sbp.svg" alt="payment-logo-sbp" /></a><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/logo-mirlogo.svg" alt="logo-mirlogo" /></a></div><button class="footer__button">Написать</button>
 				</div>
-				<div class="footer__catalog">
-					<h2 class="footer__catalog-title">Каталог</h2><a class="footer__catalog-item" href="#">Листовой прокат</a><a class="footer__catalog-item" href="#"> Арматурный прокат</a><a class="footer__catalog-item" href="#"> Метизная продукция</a><a class="footer__catalog-item" href="#"> Трубный прокат</a><a class="footer__catalog-item" href="#"> Нержавеющая сталь</a><a class="footer__catalog-item" href="#"> Цветные металлы</a>
-				</div>
-				<div class="footer__contacts">
-					<div class="footer__address-wrapper"><span class="footer__subtitle">Москва</span><span class="footer__adress-subtitle">г.Москва, ул.Воскресенская, 84 Бизнес-центр «Чистые пруды»</span></div>
-					<div class="footer__messenger-phone"><a class="footer__subtitle" href="tel:+799999999999">+7 495 545 64 20</a><span class="footer__messenger-subtitle">Телефон клиентской поддержки</span></div>
-					<div class="footer__messenger"><a class="footer__subtitle" href="mailto:renat@metaloteka.ru">client@metaloteka.ru</a><span class="footer__messenger-subtitle">Адрес электронной почты</span></div>
-					<div class="footer__messenger-wiber"><a class="footer__subtitle" href="viber://chat?number=%2B380950000000">Whatsapp | Viber</a><span class="footer__messenger-subtitle">Напишите нам в мессенджер</span></div>
+				<div class="footer__info-metaloteka">Metaloteka, 2021. Все ресурсы сайта www.metaloteka.ru, включая (но не ограничиваясь) текстовую, графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные знаки, доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную собственность, защищены российским законодательством и международными соглашениями об охране авторских прав и интеллектуальной собственности. Указанные на сайте цены не являются публичной офертой (ст. 435 ГК РФ).</div>
+				<div class="footer__privacy-policy-wrapper">
+					<div class="footer__privacy-policy-info"><a class="footer__privacy-policy" href="#">Политика конфиденциальности</a><a class="footer__privacy-policy-map" href="#">Карта сайта</a></div><a class="footer__privacy-policy-img-wrapper" href="#"><img class="footer__privacy-policy-img" src="/images/metaloteka-font-logo.svg" alt="metaloteka-font-logo" /></a><a class="footer__privacy-policy-web" href="#">Сайт разработан веб-студией Брэнд Бэйкер</a>
 				</div>
 			</div>
-			<div class="footer__requesites">
-				<div class="footer__requesites-info"><img class="footer__requesites-img" src="/images/icon-ruble.svg" alt="логотип metaloteka" />
-					<div class="footer__individuals"><span class="footer__title-individuals">Физические лица</span><span class="footer__subtitle-individuals">Вы можете оплатить заказ наличными в нашем офисе или онлайн</span></div>
-					<div class="footer__legal-entities"><span class="footer__title-individuals">ИП и ООО</span><span class="footer__subtitle-individuals">Вы можете оплатить по сформированному счету после оформления заказа</span></div>
-				</div>
-				<div class="footer__sber-icons"><img class="footer__logo-sberbank" src="/images/logo-sberbank.svg" alt="sber" /><img class="footer__logo-payment" src="/images/payment-logo-sbp.svg" alt="sber" /><img class="footer__logo-mir" src="/images/logo-mirlogo.svg" alt="mir" /></div>
-				<div class="footer__button-wrapper"><button class="footer__button">Написать</button></div>
-			</div><span class="footer__info-metaloteka">Metaloteka, 2021. Все ресурсы сайта www.metaloteka.ru, включая (но не ограничиваясь) текстовую, графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные знаки, доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную собственность, защищены российским законодательством и международными соглашениями об охране авторских прав и интеллектуальной собственности. Указанные на сайте цены не являются публичной офертой (ст. 435 ГК РФ).</span>
-			<div class="footer__privacy-policy-wrapper">
-				<div class="footer__privacy-policy-info"><a class="footer__privacy-policy" href="#">Политика конфиденциальности</a><a class="footer__privacy-policy-map" href="#">Карта сайта</a></div><a class="footer__privacy-policy-img-wrapper" href="metaloteka.ru"><img class="footer__privacy-policy-img" src="/images/metaloteka-font-logo.svg" alt="логотип metaloteka" /></a><a class="footer__privacy-policy-web" href="#">Сайт разработан веб-студией Брэнд Бэйкер</a>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 	<script defer="defer" src="/js/app.js"></script>
 </body>
 <link href="/css/app.css" rel="stylesheet">
