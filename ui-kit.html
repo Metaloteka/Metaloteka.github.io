@@ -11,8 +11,8 @@
 	<title>UI-KIT</title>
 
 <body class="body">
-	<div class="container">
-		<header class="header">
+	<header class="header">
+		<div class="container">
 			<div class="row align-items-xl-center">
 				<div class="header__connection">
 					<div class="header__line"></div><img class="header__logo" src="/images/logo.svg" alt="логотип metaloteka" />
@@ -24,7 +24,7 @@
 				<div class="header__shipped"><span class="header__number-shipped">245 т</span>
 					<div class="header__divider-shipped"></div><span class="text">отгружено за неделю</span>
 				</div>
-				<div class="header__wrap-basket"><button class="header__basket header__basket_full">
+				<div class="header__wrap-basket"><a class="header__basket header__basket_full" href="#">
 						<div class="header__basket-num">120</div>
 						<div class="header__basket-icon"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
 								<defs>
@@ -52,7 +52,7 @@
 									</g>
 								</g>
 							</svg></div>
-					</button></div>
+					</a></div>
 			</div>
 			<div class="contact-header-warning">
 				<p class="contact-header-warning__title">Российский металлопрокат</p>
@@ -66,150 +66,158 @@
 				<div class="row">
 					<div class="header__nav-link"><a class="header__link" href="#">О компании</a><a class="header__link" href="/catalog.html">Каталог продукции</a><a class="header__link" href="#">Доставка</a><a class="header__link" href="/cart-page.html">Оплата</a><a class="header__link" href="#">Госты</a><a class="header__link" href="/contacts.html">Контакты</a></div>
 					<div class="header__date">
-						<div class="header__name">Петров Иван</div><span class="header__stick">|</span><a class="header__exit">Выйти</a>
+						<div class="header__name">Иван Петров</div><span class="header__stick">|</span><a class="header__exit" href="#">Выйти</a>
 					</div>
 				</div>
 			</div>
-			<div class="row"><button class="header__catalog">каталог</button>
-				<div class="header__right"><input class="header__search" placeholder="Арматурный прокат или Гост" /><button class="header__button">Поиск</button></div>
+			<div class="row"><button class="header__catalog"><svg width="172" height="24" viewBox="0 0 172 24" xmlns="http://www.w3.org/2000/svg">
+						<g fill="#555657" fill-rule="nonzero" opacity=".978">
+							<path d="M.42 23.515h7.334v-8.97h2.962c.632 0 1.166.63 1.652 1.94l2.476 7.03h7.965l-4.128-8.921c-.631-1.358-1.505-2.133-2.574-2.57v-.097c1.506-1.018 1.749-3.588 2.866-4.945.388-.437.874-.679 1.554-.679a4.36 4.36 0 0 1 1.457.242V.388C21.207.097 19.847 0 19.118 0c-2.185 0-3.545.776-4.468 1.94-2.088 2.666-1.991 7.127-4.614 7.127H7.754V.582H.42v22.933zM40.002 23.515h6.022c-.389-1.26-.389-3.103-.389-4.509V8.727C45.635 3.152 42.721 0 35.631 0c-3.643 0-6.751.873-9.47 2.23l2.282 4.606c1.651-.872 3.885-1.406 5.828-1.406 2.477 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.33.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.857-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.749.824-3.351.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.632-.388 1.554-.582 2.72-.63l2.477-.097zM56.028 23.515h7.334V6.594h6.362L71.569.582H49.326v6.012h6.702zM88.907 23.515h6.022c-.388-1.26-.388-3.103-.388-4.509V8.727C94.54 3.152 91.627 0 84.536 0c-3.642 0-6.75.873-9.47 2.23l2.283 4.606c1.65-.872 3.885-1.406 5.828-1.406 2.476 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.331.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.856-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.748.824-3.35.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.631-.388 1.554-.582 2.72-.63l2.476-.097zM99.446 23.855c2.817 0 4.808-.97 6.314-2.764 2.428-2.86 3.933-7.855 4.662-14.06h3.4v16.484h7.333V.582H105.03c-1.02 8-2.622 13.285-4.274 15.515-.631.873-1.36 1.26-2.234 1.26-.097 0-.485 0-.825-.096v6.4c.582.145 1.31.194 1.748.194zM137.279 24c7.139 0 12.093-5.042 12.093-12.024C149.372 4.994 144.418 0 137.279 0c-7.14 0-12.093 4.994-12.093 11.976 0 6.982 4.954 12.024 12.093 12.024zm0-5.77c-3.254 0-4.614-2.715-4.614-6.254 0-3.54 1.36-6.206 4.614-6.206 3.254 0 4.613 2.666 4.613 6.206 0 3.54-1.36 6.254-4.613 6.254zM153.403 23.515h7.333V7.03h8.693L171.42.582h-18.017z" />
+						</g>
+					</svg></button>
+				<div class="header__right"><input class="header__search" placeholder="Арматурный прокат или Гост" /><button class="header__button-search"><svg width="128" height="24" viewBox="0 0 128 24" xmlns="http://www.w3.org/2000/svg">
+							<g fill="#555657" fill-rule="nonzero">
+								<path d="M.291 23.515h7.333V7.03h7.091v16.485h7.334V.582H.29zM38.172 24c7.14 0 12.093-5.042 12.093-12.024C50.265 4.994 45.312 0 38.172 0 31.033 0 26.08 4.994 26.08 11.976 26.08 18.958 31.033 24 38.172 24zm0-5.77c-3.254 0-4.613-2.715-4.613-6.254 0-3.54 1.36-6.206 4.613-6.206 3.254 0 4.614 2.666 4.614 6.206 0 3.54-1.36 6.254-4.614 6.254zM54.296 23.515h7.188l5.925-8.582c1.263-1.842 2.477-3.927 2.914-4.751h.146c-.146 1.26-.243 3.248-.243 5.14v8.193h7.14V.582h-7.189l-5.925 8.582c-1.262 1.842-2.477 3.927-2.914 4.751h-.145c.145-1.26.243-3.248.243-5.14V.583h-7.14v22.933zM93.538 24c3.35 0 6.41-.97 8.353-2.376l-2.04-4.945c-1.748.97-3.302 1.551-5.245 1.551-3.448 0-5.73-2.133-5.73-6.109 0-3.54 2.185-6.351 6.021-6.351 2.234 0 3.983.678 5.683 1.988V1.697C99.414.921 97.326 0 94.023 0 87.37 0 81.396 4.752 81.396 12.17c0 6.788 4.371 11.83 12.142 11.83zM104.902 23.515h7.334v-8.97h2.962c.631 0 1.166.63 1.651 1.94l2.477 7.03h7.965l-4.128-8.921c-.632-1.358-1.506-2.133-2.574-2.57v-.097c1.505-1.018 1.748-3.588 2.865-4.945.389-.437.874-.679 1.554-.679a4.36 4.36 0 0 1 1.457.242V.388C125.688.097 124.328 0 123.6 0c-2.186 0-3.545.776-4.468 1.94-2.088 2.666-1.991 7.127-4.614 7.127h-2.282V.582h-7.334v22.933z" />
+							</g>
+						</svg></button></div>
 			</div>
-		</header>
-		<main class="main">
+		</div>
+	</header>
+	<main class="main">
+		<style>
+			.h1 {
+				font-size: var(--fs-title1);
+				font-weight: 900;
+				text-align: center
+			}
+
+			.h2 {
+				font-size: var(--fs-title3);
+				text-align: center
+			}
+
+			.h3 {
+				--white: #ffffff9f;
+				font-size: var(--fs-title5);
+				color: var(--white)
+			}
+
+			.h4 {
+				font-size: var(--fs-22)
+			}
+
+			.p {
+				font-size: var(--fs-big)
+			}
+
+			.p code {
+				--white: #ffffff36;
+				font-family: monospace;
+				font-weight: 700;
+				background: var(--white);
+				padding: 0 4px;
+				border-radius: 15px
+			}
+		</style>
+		<h1 class="h1">~ UI-KIT Metaloteka ~</h1>
+		<section class="section-shared-component">
+			<h2 class="h2">Shared component:</h2>
 			<style>
-				.h1 {
-					font-size: var(--fs-title1);
-					font-weight: 900;
-					text-align: center
+				.example-container {
+					height: 16px
 				}
 
-				.h2 {
-					font-size: var(--fs-title3);
-					text-align: center
-				}
-
-				.h3 {
-					--white: #ffffff9f;
-					font-size: var(--fs-title5);
-					color: var(--white)
-				}
-
-				.h4 {
-					font-size: var(--fs-22)
-				}
-
-				.p {
-					font-size: var(--fs-big)
-				}
-
-				.p code {
-					--white: #ffffff36;
-					font-family: monospace;
-					font-weight: 700;
-					background: var(--white);
-					padding: 0 4px;
-					border-radius: 15px
+				.example-container .container {
+					--wet-asphalt: #46464692;
+					position: absolute;
+					left: 0;
+					background: var(--wet-asphalt)
 				}
 			</style>
-			<h1 class="h1">~ UI-KIT Metaloteka ~</h1>
-			<section class="section-shared-component">
-				<h2 class="h2">Shared component:</h2>
-				<style>
-					.example-container {
-						height: 16px
-					}
+			<h3 class="h3 mt-20">Компонент Container</h3>
+			<p class="p">- Данный компонент вызывается как <code>+Container</code>.</p>
+			<p class="p">- Компонент Container уже изначально имеет определенные стили. Данные стили позицианируют весь контент сайта в завернутом контейнере.</p>
+			<p class="p">- Дополнительных параметров не имеет.</p>
+			<div class="example-container mt-10">
+				<div class="container">
+					<div>Пример использования</div>
+				</div>
+			</div>
+			<style>
+				.example-row div:not(.row) {
+					--wet-asphalt: #46464692;
+					background: var(--wet-asphalt);
+					padding-inline: 10px
+				}
+			</style>
+			<h3 class="h3 mt-20">Компонент Row</h3>
+			<p class="p">- Данный компонент вызывается как <code>+Row</code>.</p>
+			<p class="p">- Данный компонент имеет заранее определенные стили. При переполнении он переносит контент внутри на новую строчку.</p>
+			<p class="p">- Принимает следующие параметры <code>rowCols</code>, <code>gap</code>, <code>justify</code>, <code>alignItems</code>.</p>
+			<div class="example-row mt-10">
+				<h4 class="h4">Использования компонента без параметров</h4>
+				<div class="row">
+					<div>Пример использования компонента без параметров</div>
+					<div>Пример использования компонента без параметров</div>
+					<div>Пример использования компонента без параметров</div>
+					<div>Пример использования компонента без параметров</div>
+					<div>Пример использования компонента без параметров</div>
+				</div>
+				<h4 class="h4 mt-10">Использования компонента с параметром - rowCols</h4>
+				<div class="row row-cols-3">
+					<div>Пример использования компонента с rowCols</div>
+					<div>Пример использования компонента с rowCols</div>
+					<div>Пример использования компонента с rowCols</div>
+					<div>Пример использования компонента с rowCols</div>
+					<div>Пример использования компонента с rowCols</div>
+				</div>
+				<h4 class="h4 mt-10">Использования компонента с параметром - gap</h4>
+				<div class="row cg-20 rg-10">
+					<div>Пример использования компонента с gap</div>
+					<div>Пример использования компонента с gap</div>
+					<div>Пример использования компонента с gap</div>
+					<div>Пример использования компонента с gap</div>
+					<div>Пример использования компонента с gap</div>
+				</div>
+				<h4 class="h4 mt-10">Использования компонента с параметром - rowCols и gap</h4>
+				<div class="row row-cols-3 cg-20 rg-10">
+					<div>Пример использования компонента с rowCols и gap</div>
+					<div>Пример использования компонента с rowCols и gap</div>
+					<div>Пример использования компонента с rowCols и gap</div>
+					<div>Пример использования компонента с rowCols и gap</div>
+					<div>Пример использования компонента с rowCols и gap</div>
+				</div>
+			</div>
+			<style>
+				.example-text__properties {
+					--wet-asphalt: #46464692;
+					background: var(--wet-asphalt);
+					display: flex;
+					flex-direction: column
+				}
 
-					.example-container .container {
-						--wet-asphalt: #46464692;
-						position: absolute;
-						left: 0;
-						background: var(--wet-asphalt)
-					}
-				</style>
-				<h3 class="h3 mt-20">Компонент Container</h3>
-				<p class="p">- Данный компонент вызывается как <code>+Container</code>.</p>
-				<p class="p">- Компонент Container уже изначально имеет определенные стили. Данные стили позицианируют весь контент сайта в завернутом контейнере.</p>
-				<p class="p">- Дополнительных параметров не имеет.</p>
-				<div class="example-container mt-10">
-					<div class="container">
-						<div>Пример использования</div>
-					</div>
+				.example-text__properties_dark {
+					--white: #f4f2f2;
+					background: var(--white)
+				}
+			</style>
+			<h3 class="h3 mt-20">Компонент Text</h3>
+			<p class="p">- Данный компонент вызывается как <code>+Text</code>.</p>
+			<p class="p">- Данный компонент имеет заранее определенные стили.</p>
+			<p class="p">- Принимает следующие параметры в объект bem - <code>size</code>, <code>color</code>.</p>
+			<p class="p">- Принимает следующие параметры в объект opt - <code>p</code>. Параметр p является boolean. Если передать ему true, то текст будет обернут в тег параграфа.</p>
+			<div class="example-text mt-10">
+				<h4 class="h4 mt-10">Использования компонента с параметром size</h4>
+				<div class="example-text__properties"><span class="text">Пример использования без параметров. Имеет font-size: 14px</span><span class="text text_small">Пример использования для font-size: 12px</span><span class="text text_big">Пример использования для font-size: 16px</span><span class="text text_fs-18">Пример использования для font-size: 18px</span><span class="text text_fs-20">Пример использования для font-size: 20px</span><span class="text text_fs-22">Пример использования для font-size: 22px</span><span class="text text_fs-24">Пример использования для font-size: 24px</span><span class="text text_fs-26">Пример использования для font-size: 26px</span><span class="text text_fs-28">Пример использования для font-size: 28px</span><span class="text text_fs-30">Пример использования для font-size: 30px</span><span class="text text_fs-32">Пример использования для font-size: 32px</span><span class="text text_fs-36">Пример использования для font-size: 36px</span><span class="text text_fs-38">Пример использования для font-size: 38px</span><span class="text text_fs-40">Пример использования для font-size: 40px</span><span class="text text_fs-46">Пример использования для font-size: 46px</span><span class="text text_fs-50">Пример использования для font-size: 50px</span><span class="text text_fs-54">Пример использования для font-size: 54px</span><span class="text text_fs-72">Пример использования для font-size: 72px</span></div>
+				<h4 class="h4 mt-10">Использования компонента с параметром size и color</h4>
+				<div class="example-text__properties example-text__properties_dark"><span class="text text_fs-22 text_wet-asphalt">Пример использования для font-size: 22px и color - wet-asphalt</span></div>
+				<h4 class="h4 mt-10">Использования компонента с параметром size и p</h4>
+				<div class="example-text__properties">
+					<p class="text text_fs-22">Пример использования для font-size: 22px и opt: p</p>
 				</div>
-				<style>
-					.example-row div:not(.row) {
-						--wet-asphalt: #46464692;
-						background: var(--wet-asphalt);
-						padding-inline: 10px
-					}
-				</style>
-				<h3 class="h3 mt-20">Компонент Row</h3>
-				<p class="p">- Данный компонент вызывается как <code>+Row</code>.</p>
-				<p class="p">- Данный компонент имеет заранее определенные стили. При переполнении он переносит контент внутри на новую строчку.</p>
-				<p class="p">- Принимает следующие параметры <code>rowCols</code>, <code>gap</code>, <code>justify</code>, <code>alignItems</code>.</p>
-				<div class="example-row mt-10">
-					<h4 class="h4">Использования компонента без параметров</h4>
-					<div class="row">
-						<div>Пример использования компонента без параметров</div>
-						<div>Пример использования компонента без параметров</div>
-						<div>Пример использования компонента без параметров</div>
-						<div>Пример использования компонента без параметров</div>
-						<div>Пример использования компонента без параметров</div>
-					</div>
-					<h4 class="h4 mt-10">Использования компонента с параметром - rowCols</h4>
-					<div class="row row-cols-3">
-						<div>Пример использования компонента с rowCols</div>
-						<div>Пример использования компонента с rowCols</div>
-						<div>Пример использования компонента с rowCols</div>
-						<div>Пример использования компонента с rowCols</div>
-						<div>Пример использования компонента с rowCols</div>
-					</div>
-					<h4 class="h4 mt-10">Использования компонента с параметром - gap</h4>
-					<div class="row cg-20 rg-10">
-						<div>Пример использования компонента с gap</div>
-						<div>Пример использования компонента с gap</div>
-						<div>Пример использования компонента с gap</div>
-						<div>Пример использования компонента с gap</div>
-						<div>Пример использования компонента с gap</div>
-					</div>
-					<h4 class="h4 mt-10">Использования компонента с параметром - rowCols и gap</h4>
-					<div class="row row-cols-3 cg-20 rg-10">
-						<div>Пример использования компонента с rowCols и gap</div>
-						<div>Пример использования компонента с rowCols и gap</div>
-						<div>Пример использования компонента с rowCols и gap</div>
-						<div>Пример использования компонента с rowCols и gap</div>
-						<div>Пример использования компонента с rowCols и gap</div>
-					</div>
-				</div>
-				<style>
-					.example-text__properties {
-						--wet-asphalt: #46464692;
-						background: var(--wet-asphalt);
-						display: flex;
-						flex-direction: column
-					}
-
-					.example-text__properties_dark {
-						--white: #f4f2f2;
-						background: var(--white)
-					}
-				</style>
-				<h3 class="h3 mt-20">Компонент Text</h3>
-				<p class="p">- Данный компонент вызывается как <code>+Text</code>.</p>
-				<p class="p">- Данный компонент имеет заранее определенные стили.</p>
-				<p class="p">- Принимает следующие параметры в объект bem - <code>size</code>, <code>color</code>.</p>
-				<p class="p">- Принимает следующие параметры в объект opt - <code>p</code>. Параметр p является boolean. Если передать ему true, то текст будет обернут в тег параграфа.</p>
-				<div class="example-text mt-10">
-					<h4 class="h4 mt-10">Использования компонента с параметром size</h4>
-					<div class="example-text__properties"><span class="text">Пример использования без параметров. Имеет font-size: 14px</span><span class="text text_small">Пример использования для font-size: 12px</span><span class="text text_big">Пример использования для font-size: 16px</span><span class="text text_fs-18">Пример использования для font-size: 18px</span><span class="text text_fs-20">Пример использования для font-size: 20px</span><span class="text text_fs-22">Пример использования для font-size: 22px</span><span class="text text_fs-24">Пример использования для font-size: 24px</span><span class="text text_fs-26">Пример использования для font-size: 26px</span><span class="text text_fs-28">Пример использования для font-size: 28px</span><span class="text text_fs-30">Пример использования для font-size: 30px</span><span class="text text_fs-32">Пример использования для font-size: 32px</span><span class="text text_fs-36">Пример использования для font-size: 36px</span><span class="text text_fs-38">Пример использования для font-size: 38px</span><span class="text text_fs-40">Пример использования для font-size: 40px</span><span class="text text_fs-46">Пример использования для font-size: 46px</span><span class="text text_fs-50">Пример использования для font-size: 50px</span><span class="text text_fs-54">Пример использования для font-size: 54px</span><span class="text text_fs-72">Пример использования для font-size: 72px</span></div>
-					<h4 class="h4 mt-10">Использования компонента с параметром size и color</h4>
-					<div class="example-text__properties example-text__properties_dark"><span class="text text_fs-22 text_wet-asphalt">Пример использования для font-size: 22px и color - wet-asphalt</span></div>
-					<h4 class="h4 mt-10">Использования компонента с параметром size и p</h4>
-					<div class="example-text__properties">
-						<p class="text text_fs-22">Пример использования для font-size: 22px и opt: p</p>
-					</div>
-				</div>
-			</section>
-		</main>
-	</div>
+			</div>
+		</section>
+	</main>
 	<div class="bg-footer">
 		<footer class="footer">
 			<div class="container">
