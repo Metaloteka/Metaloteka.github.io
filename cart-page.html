@@ -13,7 +13,7 @@
 <body class="body">
 	<header class="header">
 		<div class="container">
-			<div class="row align-items-xl-center">
+			<div class="row justify-content-between align-items-xl-center">
 				<div class="header__connection">
 					<div class="header__line"></div><img class="header__logo" src="/images/logo.svg" alt="логотип metaloteka" />
 					<div class="header__line"></div>
@@ -70,7 +70,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row"><button class="header__catalog"><svg width="172" height="24" viewBox="0 0 172 24" xmlns="http://www.w3.org/2000/svg">
+			<div class="row justify-content-between"><button class="header__catalog"><svg width="172" height="24" viewBox="0 0 172 24" xmlns="http://www.w3.org/2000/svg">
 						<g fill="#555657" fill-rule="nonzero" opacity=".978">
 							<path d="M.42 23.515h7.334v-8.97h2.962c.632 0 1.166.63 1.652 1.94l2.476 7.03h7.965l-4.128-8.921c-.631-1.358-1.505-2.133-2.574-2.57v-.097c1.506-1.018 1.749-3.588 2.866-4.945.388-.437.874-.679 1.554-.679a4.36 4.36 0 0 1 1.457.242V.388C21.207.097 19.847 0 19.118 0c-2.185 0-3.545.776-4.468 1.94-2.088 2.666-1.991 7.127-4.614 7.127H7.754V.582H.42v22.933zM40.002 23.515h6.022c-.389-1.26-.389-3.103-.389-4.509V8.727C45.635 3.152 42.721 0 35.631 0c-3.643 0-6.751.873-9.47 2.23l2.282 4.606c1.651-.872 3.885-1.406 5.828-1.406 2.477 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.33.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.857-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.749.824-3.351.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.632-.388 1.554-.582 2.72-.63l2.477-.097zM56.028 23.515h7.334V6.594h6.362L71.569.582H49.326v6.012h6.702zM88.907 23.515h6.022c-.388-1.26-.388-3.103-.388-4.509V8.727C94.54 3.152 91.627 0 84.536 0c-3.642 0-6.75.873-9.47 2.23l2.283 4.606c1.65-.872 3.885-1.406 5.828-1.406 2.476 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.331.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.856-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.748.824-3.35.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.631-.388 1.554-.582 2.72-.63l2.476-.097zM99.446 23.855c2.817 0 4.808-.97 6.314-2.764 2.428-2.86 3.933-7.855 4.662-14.06h3.4v16.484h7.333V.582H105.03c-1.02 8-2.622 13.285-4.274 15.515-.631.873-1.36 1.26-2.234 1.26-.097 0-.485 0-.825-.096v6.4c.582.145 1.31.194 1.748.194zM137.279 24c7.139 0 12.093-5.042 12.093-12.024C149.372 4.994 144.418 0 137.279 0c-7.14 0-12.093 4.994-12.093 11.976 0 6.982 4.954 12.024 12.093 12.024zm0-5.77c-3.254 0-4.614-2.715-4.614-6.254 0-3.54 1.36-6.206 4.614-6.206 3.254 0 4.613 2.666 4.613 6.206 0 3.54-1.36 6.254-4.613 6.254zM153.403 23.515h7.333V7.03h8.693L171.42.582h-18.017z" />
 						</g>
@@ -86,9 +86,118 @@
 	<main class="main">
 		<div class="container">
 			<section class="section-breadcrumbs">
-				<div class="section-breadcrumbs__inner"><a class="section-breadcrumbs__link" href="/">Главная</a><span class="section-breadcrumbs__link">/</span><span class="section-breadcrumbs__link">Корзина</span></div><a class="section-breadcrumbs__back" href="#">Назад</a>
+				<div class="section-breadcrumbs__inner"><a class="section-breadcrumbs__link" href="/" data-popup-open="payment-entity">Главная</a><span class="section-breadcrumbs__link">/</span><span class="section-breadcrumbs__link" data-popup-open="pay-check">Корзина</span></div><a class="section-breadcrumbs__back" href="#" data-popup-open="payment">Назад</a>
 			</section>
 		</div>
+		<section class="section-cart block-layout">
+			<div class="container">
+				<div class="row">
+					<div class="block-layout__left">
+						<div class="section-cart__icon"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<clipPath id="dl3q6myura">
+										<path d="M4500 0v5500H0V0h4500z" />
+									</clipPath>
+									<clipPath id="a5dmji0u5b">
+										<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+									</clipPath>
+									<clipPath id="hx4p2o3vkc">
+										<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+									</clipPath>
+								</defs>
+								<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+									<g>
+										<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+											<path d="M0 0h68.735v49.434H0V0z" />
+										</g>
+										<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+											<path d="M0 0h8.588v8.595H0V0z" />
+										</g>
+										<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+											<path d="M0 0h8.588v8.595H0V0z" />
+										</g>
+									</g>
+								</g>
+							</svg></div>
+						<div class="section-cart__top">
+							<div class="section-cart__title-inner">
+								<div class="section-cart__title">Корзина</div>
+								<div class="section-cart__line-big"></div>
+							</div>
+							<div class="section-cart__room">Товаров (7)</div>
+						</div>
+						<div class="section-cart__order">
+							<div class="section-cart__number">21/05/2022-MT</div><button class="section-cart__input">Войти</button>
+						</div>
+						<div class="section-cart__line-small"></div>
+						<div class="section-cart__line-small section-cart__line-small_top"></div>
+						<div class="section-cart__call">
+							<div class="section-cart__summ section-cart__summ_left">
+								<p class="section-cart__total">Итого:</p>
+								<div class="section-cart__total section-cart__total_summ">
+									<p class="section-cart__number section-cart__number_underline">6 233 944</p>
+									<p class="section-cart__rub">р.</p>
+								</div>
+								<p class="section-cart__total section-cart__total_days">≈ 4,548 т</p>
+							</div>
+							<div class="section-cart__summ section-cart__summ_center">
+								<p class="section-cart__total section-cart__total_bold">Всего наимнований (7) на сумму 6 233 944 руб. (в том числе НДС 20%)</p>
+								<p class="section-cart__total section-cart__total_small">Сто пятьдесят восемь миллионов двести тридцать три тысячи девятьсот сорок четыре руб. 00 копеек</p>
+							</div>
+							<div class="section-cart__summ section-cart__summ_right"><img class="section-cart__warning-img" src="/images/icon-warning.svg" alt="Warning" />
+								<div class="section-cart__warning-text">В заказе указан теоретический вес металла. Фактические объем и сумма могут быть незначительно скорректированы в соответствии с реальным весом отгрузки</div>
+							</div>
+						</div><button class="section-cart__btn-cart section-cart__btn-cart_order">Оформить заказ</button><button class="section-cart__btn-cart section-cart__btn-cart_reserve">Оплатить резерв (1-3 дня)</button>
+						<div class="section-cart__line-small section-cart__line-small_bottom"></div>
+						<div class="section-cart__txt-onclick section-cart__txt-onclick_none">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</div>
+						<div class="section-cart__footer"><img class="section-cart__qr" src="/images/icon-qr.svg" />
+							<div class="contact-information-footer">
+								<div class="contact-information-footer__name"><span class="contact-information-footer__title">Metaloteka</span>
+									<div class="contact-information-footer__sub-title">Металлопрокат оптом и в розницу</div>
+									<div class="contact-information-footer__range"></div>
+									<p class="contact-information-footer__text">QR-код для загрузки реквизитов в мобильное приложение банка</p>
+								</div>
+							</div>
+							<div class="contact-information-footer">
+								<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="tel:+74955456420">+7 495 545 64 20</a>
+									<div class="contact-information-footer__range"></div>
+									<p class="contact-information-footer__text">Телефон клиентской поддержки</p>
+									<p class="contact-information-footer__text contact-information-footer__text_bold">Онлайн заявки и заказы обрабатываем с 9:00-18:00</p>
+								</div>
+							</div>
+							<div class="contact-information-footer">
+								<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a>
+									<div class="contact-information-footer__range"></div>
+									<p class="contact-information-footer__text">Напишите нам и мы постараемся ответить на все ваши вопросы</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-layout__right">
+						<div class="section-cart__order section-cart__order_col">
+							<div class="section-cart__number">Оформить заказ</div>
+							<div class="section-cart__room">Гость</div>
+						</div>
+						<div class="section-cart__line-small section-cart__line-small_fat"></div>
+						<div class="section-cart__call section-cart__call_col">
+							<div class="section-cart__summ section-cart__summ_top">
+								<p class="section-cart__total">Итого:</p>
+								<div class="section-cart__total section-cart__total_summ">
+									<p class="section-cart__number section-cart__number_summ">6 233 944</p>
+									<p class="section-cart__rub section-cart__rub_fs-38">р.</p>
+								</div>
+								<p class="section-cart__total section-cart__total_days">≈ 4,548 т</p>
+							</div>
+							<div class="section-cart__summ section-cart__summ_center">
+								<p class="section-cart__total section-cart__total_bold">Всего наимнований (7) на сумму 6 233 944 руб. (в том числе НДС 20%)</p>
+								<p class="section-cart__total section-cart__total_small14px">Сто пятьдесят восемь миллионов двести тридцать три тысячи девятьсот сорок четыре руб. 00 копеек</p>
+							</div>
+						</div><button class="section-cart__btn-cart section-cart__btn-cart_order">Оформить заказ</button><button class="section-cart__btn-cart section-cart__btn-cart_reserve">Оплатить резерв</button>
+						<div class="section-cart__txt-onclick">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<div class="bg-footer">
 		<footer class="footer">
