@@ -66,7 +66,7 @@
 				<div class="row">
 					<div class="header__nav-link"><a class="header__link" href="#">О компании</a><a class="header__link" href="/catalog.html">Каталог продукции</a><a class="header__link" href="#">Доставка</a><a class="header__link" href="/cart-page.html">Оплата</a><a class="header__link" href="#">Госты</a><a class="header__link" href="/contacts.html">Контакты</a></div>
 					<div class="header__date">
-						<div class="header__name">Иван Петров</div><span class="header__stick">|</span><a class="header__exit" href="#">Выйти</a>
+						<div class="header__name">Иван Петров</div><span class="header__stick">|</span><a class="header__exit" href="#" data-popup-open="authorization">Выйти</a>
 					</div>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 				<div class="section-breadcrumbs__inner"><a class="section-breadcrumbs__link" href="/" data-popup-open="payment-entity">Главная</a><span class="section-breadcrumbs__link">/</span><span class="section-breadcrumbs__link" data-popup-open="pay-check">Оформление заказа</span></div><a class="section-breadcrumbs__back" href="#" data-popup-open="payment">Назад</a>
 			</section>
 		</div>
-		<section class="section-order-reserve block-layout">
+		<section class="section-order-reserve section-order-reserve_processing block-layout">
 			<div class="container">
 				<div class="row rg-30 align-items-start">
 					<div class="block-layout__left">
@@ -121,28 +121,29 @@
 							</svg></div>
 						<div class="section-order-reserve__top">
 							<div class="section-order-reserve__title-inner">
-								<p class="text text_fs-50 text_fs-xl-54 text_wet-asphalt text_fw-900 text_lh-1 section-order-reserve__title">Резерв</p>
+								<p class="text text_fs-50 text_fs-xl-54 text_wet-asphalt text_fw-900 text_lh-1 section-order-reserve__title">Оформление заказа</p>
 								<div class="section-order-reserve__line-big"></div>
 							</div>
 							<p class="text text_fs-20 text_wet-asphalt text_fw-300 text_lh-1-2 section-order-reserve__text-room">№1605221-RSRV</p>
 						</div>
 						<div class="section-order-reserve__line-small"></div>
 						<div class="accordion">
-							<div class="accordion__title">1. Резерв товара</div>
+							<div class="accordion__title">1. Способ доставки</div>
 							<div class="accordion__body">
 								<p class="text text_wet-asphalt-80 text_fw-500 text_lh-1-29 section-order-reserve__text-info-period-days">Выберите удобный для вас способ доставки</p>
 								<div>
 									<div class="tabs tabs_button">
-										<div class="tabs__buttons"><button class="tabs__button js-active" data-tab-button="1">Самовывоз</button><button class="tabs__button" data-tab-button="2">Доставка</button></div>
-										<div class="tabs__body"></div>
+										<div class="tabs__buttons"><button class="tabs__button js-active" data-tab-button="11">Самовывоз</button><button class="tabs__button" data-tab-button="12">Доставка</button></div>
+										<div class="tabs__body">
+											<div class="tabs__content" data-tab-content="12">
+												<form class="section-order-reserve__form-processing"><label class="section-order-reserve__field-item section-order-reserve__field-item_field-acc"><input required="required" /><span>Адрес доставки</span><a class="section-order-reserve__carta">указать на карте</a></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-m"><input required="required" /><span>Контактное лицо</span></label></form>
+											</div>
+											<div class="tabs__content js-active" data-tab-content="11">
+												<form class="section-order-reserve__form-processing"><label class="section-order-reserve__field-item section-order-reserve__field-item_field-acc"><input required="required" /><span>Адрес склада</span></label></form>
+											</div>
+										</div>
 									</div>
-									<div class="tabs__content js-active" data-tab-content="1">
-										<div class="section-order-reserve__ffff"></div>
-									</div>
-									<div class="tabs__content" data-tab-content="2">
-										<div class="section-order-reserve__ffff"></div>
-									</div>
-									<p class="text text_fs-18 text_wet-asphalt text_fw-800 text_lh-1-1 section-order-reserve__reserve-condition-title">Условия резерва</p>
+									<p class="text text_fs-18 text_wet-asphalt text_fw-800 text_lh-1-1 section-order-reserve__reserve-condition-title">Условия доставки</p>
 									<p class="text text_fs-10 text_wet-asphalt-70 text_fw-300 text_lh-1-4 section-order-reserve__reserve-condition-text">Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие. Цены не являются публичной офертой, содержит ориентировочный уровень цен. Окончательную цену (и уровень скидок) - оговаривайте с менеджером. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие.</p>
 								</div>
 							</div>
@@ -152,28 +153,23 @@
 							<div class="accordion__title">2. Личные данные</div>
 							<div class="accordion__body"><button class="section-order-reserve__accordion-btn">Войти</button>
 								<p class="text text_wet-asphalt-80 text_fw-300 text_lh-1-29 section-order-reserve__info-way">Заполните данные для оформления заказа</p>
-								<div class="tabs tabs_button">
-									<div class="tabs__buttons"><button class="tabs__button js-active" data-tab-button="1">Самовывоз</button><button class="tabs__button" data-tab-button="2">Доставка</button></div>
+								<div class="tabs tabs_button-dev">
+									<div class="tabs__buttons"><button class="tabs__button js-active" data-tab-button="1">Юрид. лицо</button><button class="tabs__button" data-tab-button="2">Физ. лицо</button></div>
 									<div class="tabs__body">
-										<div class="tabs__content js-active" data-tab-content="1">
-											<div class="section-order-reserve__ffff"><span class="text"></span>
-												<form class="section-order-reserve__form"><label class="section-order-reserve__field-item section-order-reserve__field-item_field-m"><input class="section-order-reserve__item-inn" required="required" /><span>ИНН*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-m"><input required="required" /><span>Название компании</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Имя*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Фамилия*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Моб. телефон*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-x"><input required="required" /><span>Адрес доставки</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>E-mail</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-t"><textarea required="required"></textarea><span>Комментарий к заказу</span></label></form>
-												<div class="section-order-reserve__item-btn">Сохранить</div>
-												<p class="text text_fs-18 text_wet-asphalt text_fw-800 text_lh-1-1 section-order-reserve__reserve-condition-title">Конфеденциальность личных данных</p>
-												<p class="text text_fs-10 text_wet-asphalt-70 text_fw-300 text_lh-1-4 section-order-reserve__reserve-condition-text">Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие. Цены не являются публичной офертой, содержит ориентировочный уровень цен. Окончательную цену (и уровень скидок) - оговаривайте с менеджером. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие.</p>
-											</div>
+										<div class="tabs__content js-active" data-tab-content="1"><span class="text"></span>
+											<form class="section-order-reserve__form"><label class="section-order-reserve__field-item section-order-reserve__field-item_field-m"><input class="section-order-reserve__item-inn" required="required" /><span>ИНН*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-m"><input required="required" /><span>Название компании</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Имя*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Фамилия*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Моб. телефон*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-x"><input required="required" /><span>Адрес доставки</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>E-mail</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-t"><textarea required="required"></textarea><span>Комментарий к заказу</span></label></form>
+											<div class="section-order-reserve__item-btn">Сохранить</div>
+											<p class="text text_fs-18 text_wet-asphalt text_fw-800 text_lh-1-1 section-order-reserve__reserve-condition-title">Конфеденциальность личных данных</p>
+											<p class="text text_fs-10 text_wet-asphalt-70 text_fw-300 text_lh-1-4 section-order-reserve__reserve-condition-text">Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие. Цены не являются публичной офертой, содержит ориентировочный уровень цен. Окончательную цену (и уровень скидок) - оговаривайте с менеджером. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие.</p>
 										</div>
-										<div class="tabs__content" data-tab-content="2">
-											<div class="section-order-reserve__ffff"><span class="text"></span>
-												<form class="section-order-reserve__form"><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Имя*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Фамилия*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Моб. телефон*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-x"><input required="required" /><span>Адрес доставки</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>E-mail</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-t"><textarea required="required"></textarea><span>Комментарий к заказу</span></label></form>
-												<div class="section-order-reserve__item-btn">Сохранить</div>
-												<div class="section-order-reserve__reserve-condition-title">Конфеденциальность личных данных</div>
-												<div class="section-order-reserve__reserve-condition-text">Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие. Цены не являются публичной офертой, содержит ориентировочный уровень цен. Окончательную цену (и уровень скидок) - оговаривайте с менеджером. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие.</div>
-											</div>
+										<div class="tabs__content" data-tab-content="2"><span class="text"></span>
+											<form class="section-order-reserve__form"><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Имя*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Фамилия*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>Моб. телефон*</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-x"><input required="required" /><span>Адрес доставки</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-s"><input required="required" /><span>E-mail</span></label><label class="section-order-reserve__field-item section-order-reserve__field-item_field-t"><textarea required="required"></textarea><span>Комментарий к заказу</span></label></form>
+											<div class="section-order-reserve__item-btn">Сохранить</div>
+											<div class="section-order-reserve__reserve-condition-title">Конфеденциальность личных данных</div>
+											<div class="section-order-reserve__reserve-condition-text">Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие. Цены не являются публичной офертой, содержит ориентировочный уровень цен. Окончательную цену (и уровень скидок) - оговаривайте с менеджером. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. Резерв товаров из вашего списка товаров на складе сроком на 14 суток. Приобретая услугу Вы соглашаетесь с тем, что стоимость товара на момент окончания срока резерва может изменится. По окончанию срока резерва товара на складе мы не гарантируем его последующее наличие.</div>
 										</div>
 									</div>
 								</div>
-								<div class="section-order-reserve__ffff"></div>
 							</div>
 						</div>
 						<div class="section-order-reserve__line-small"></div>
@@ -363,6 +359,13 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+	<div class="popup" data-popup="authorization">
+		<div class="popup-authorization popup__body">
+			<div class="popup-authorization__title">Вход в личный кабинет</div>
+			<div class="popup-authorization__line"></div>
+			<form class="popup-authorization__form"><label class="popup-authorization__field-item"><input required="required" /><span>Фамилия Имя</span></label><label class="popup-authorization__field-item"><input required="required" type="number" /><span>ИНН</span></label><label class="popup-authorization__field-item"><input required="required" type="email" /><span>E-mail</span></label><label class="popup-authorization__field-item"><input required="required" type="password" /><span>Пароль</span></label><label class="popup-authorization__field-item"><input required="required" type="tel" /><span>Моб. телефон</span></label><button class="popup-authorization__button-password">Вход</button></form><button class="popup__close">Закрыть</button>
+		</div>
 	</div>
 	<div class="popup" data-popup="payment">
 		<div class="popup-payment popup__body">

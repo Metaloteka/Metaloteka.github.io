@@ -66,7 +66,7 @@
 				<div class="row">
 					<div class="header__nav-link"><a class="header__link" href="#">О компании</a><a class="header__link" href="/catalog.html">Каталог продукции</a><a class="header__link" href="#">Доставка</a><a class="header__link" href="/cart-page.html">Оплата</a><a class="header__link" href="#">Госты</a><a class="header__link" href="/contacts.html">Контакты</a></div>
 					<div class="header__date">
-						<div class="header__name">Иван Петров</div><span class="header__stick">|</span><a class="header__exit" href="#">Выйти</a>
+						<div class="header__name">Иван Петров</div><span class="header__stick">|</span><a class="header__exit" href="#" data-popup-open="authorization">Выйти</a>
 					</div>
 				</div>
 			</div>
@@ -1067,6 +1067,13 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+	<div class="popup" data-popup="authorization">
+		<div class="popup-authorization popup__body">
+			<div class="popup-authorization__title">Вход в личный кабинет</div>
+			<div class="popup-authorization__line"></div>
+			<form class="popup-authorization__form"><label class="popup-authorization__field-item"><input required="required" /><span>Фамилия Имя</span></label><label class="popup-authorization__field-item"><input required="required" type="number" /><span>ИНН</span></label><label class="popup-authorization__field-item"><input required="required" type="email" /><span>E-mail</span></label><label class="popup-authorization__field-item"><input required="required" type="password" /><span>Пароль</span></label><label class="popup-authorization__field-item"><input required="required" type="tel" /><span>Моб. телефон</span></label><button class="popup-authorization__button-password">Вход</button></form><button class="popup__close">Закрыть</button>
+		</div>
 	</div>
 	<script defer="defer" src="/js/app.js"></script>
 </body>
