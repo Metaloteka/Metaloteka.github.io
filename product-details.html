@@ -1,146 +1,531 @@
 <!doctype html>
 <html lang="ru">
 
-</html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#678c92" />
+		<title>Информация о продукте</title>
+		<link href="/css/app.css" rel="stylesheet">
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta name="theme-color" content="#678c92" />
-	<title>Информация о продукте</title>
-
-<body class="body">
-	<header class="header">
-		<div class="container">
-			<div class="row justify-content-between align-items-xl-center">
-				<div class="header__connection">
-					<div class="header__line"></div><img class="header__logo" src="/images/logo.svg" alt="логотип metaloteka" />
-					<div class="header__line"></div>
-					<div class="contact-header ml-xl-60"><img class="contact-header__icon" src="/images/icon-pin-map.svg" alt="icon" /><span class="text contact-header__text">Регион доставки</span><span class="contact-header__contact">г.Москва</span></div>
-					<div class="contact-header ml-xl-20"><span class="text contact-header__text">Телефон клиентской поддержки</span><a class="contact-header__contact" href="tel:+74955456420">+7 495 545 64 20</a></div>
-					<div class="contact-header ml-xl-20"><span class="text contact-header__text">Адрес электронной почты</span><a class="contact-header__contact" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a></div>
-				</div>
-				<div class="header__shipped"><span class="header__number-shipped">245 т</span>
-					<div class="header__divider-shipped"></div><span class="text">отгружено за неделю</span>
-				</div>
-				<div class="header__wrap-basket"><a class="header__basket header__basket_full" href="#">
-						<div class="header__basket-num">120</div>
-						<div class="header__basket-icon"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-								<defs>
-									<clipPath id="dl3q6myura">
-										<path d="M4500 0v5500H0V0h4500z" />
-									</clipPath>
-									<clipPath id="a5dmji0u5b">
-										<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-									</clipPath>
-									<clipPath id="hx4p2o3vkc">
-										<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-									</clipPath>
-								</defs>
-								<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-									<g>
-										<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-											<path d="M0 0h68.735v49.434H0V0z" />
-										</g>
-										<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-											<path d="M0 0h8.588v8.595H0V0z" />
-										</g>
-										<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-											<path d="M0 0h8.588v8.595H0V0z" />
+	<body class="body">
+		<header class="header">
+			<div class="container">
+				<div class="row justify-content-between align-items-xl-center">
+					<div class="header__connection">
+						<div class="header__line"></div><img class="header__logo" src="/images/logo.svg" alt="логотип metaloteka" />
+						<div class="header__line"></div>
+						<div class="contact-header ml-lg-60"><img class="contact-header__icon" src="/images/icon-pin-map.svg" alt="icon" /><span class="text contact-header__text">Регион доставки</span><span class="contact-header__contact">г.Москва</span></div>
+						<div class="contact-header ml-lg-20"><span class="text contact-header__text">Телефон клиентской поддержки</span><a class="contact-header__contact" href="tel:+74955456420">+7 495 545 64 20</a></div>
+						<div class="contact-header ml-lg-20"><span class="text contact-header__text">Адрес электронной почты</span><a class="contact-header__contact" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a></div>
+					</div>
+					<div class="header__shipped"><span class="header__number-shipped">245 т</span>
+						<div class="header__divider-shipped"></div><span class="text">отгружено за неделю</span>
+					</div>
+					<div class="header__wrap-basket"><a class="header__basket header__basket_full" href="#">
+							<div class="header__basket-num">120</div>
+							<div class="header__basket-icon"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<clipPath id="dl3q6myura">
+											<path d="M4500 0v5500H0V0h4500z" />
+										</clipPath>
+										<clipPath id="a5dmji0u5b">
+											<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+										</clipPath>
+										<clipPath id="hx4p2o3vkc">
+											<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+										</clipPath>
+									</defs>
+									<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+										<g>
+											<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+												<path d="M0 0h68.735v49.434H0V0z" />
+											</g>
+											<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+												<path d="M0 0h8.588v8.595H0V0z" />
+											</g>
+											<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+												<path d="M0 0h8.588v8.595H0V0z" />
+											</g>
 										</g>
 									</g>
-								</g>
-							</svg></div>
-					</a></div>
-			</div>
-			<div class="contact-header-warning">
-				<p class="contact-header-warning__title">Российский металлопрокат</p>
-				<div class="contact-header-warning__line"></div>
-				<div class="contact-header-warning__right"><img class="contact-header-warning__img" src="/images/icon-warning.svg" alt="icon" />
-					<p class="contact-header-warning__warning">В связи с высокой волатильность отпускных цен комбинатов актуальные цены на металл уточняйте у менеджеров</p>
+								</svg></div>
+						</a></div>
 				</div>
-				<div class="contact-header-warning__line"></div>
-			</div>
-			<div class="header__nav">
-				<div class="row">
-					<div class="header__nav-link"><a class="header__link" href="#">О компании</a><a class="header__link" href="/catalog.html">Каталог продукции</a><a class="header__link" href="#">Доставка</a><a class="header__link" href="/cart-page.html">Оплата</a><a class="header__link" href="#">Госты</a><a class="header__link" href="/contacts.html">Контакты</a></div>
-					<div class="header__date">
-						<div class="header__name">Иван Петров</div><span class="header__stick">|</span><a class="header__exit" href="#" data-popup-open="authorization">Выйти</a>
+				<div class="contact-header-warning">
+					<p class="contact-header-warning__title">Российский металлопрокат</p>
+					<div class="contact-header-warning__line"></div>
+					<div class="contact-header-warning__right"><img class="contact-header-warning__img" src="/images/icon-warning.svg" alt="icon" />
+						<p class="contact-header-warning__warning">В связи с высокой волатильность отпускных цен комбинатов актуальные цены на металл уточняйте у менеджеров</p>
+					</div>
+					<div class="contact-header-warning__line"></div>
+				</div>
+				<div class="header__nav">
+					<div class="row">
+						<div class="header__nav-link"><a class="header__link" href="#">О компании</a><a class="header__link" href="/catalog.html">Каталог продукции</a><a class="header__link" href="#">Доставка</a><a class="header__link" href="/cart-page.html">Оплата</a><a class="header__link" href="#">Госты</a><a class="header__link" href="/contacts.html">Контакты</a></div>
+						<div class="header__date">
+							<div class="header__name">Иван Петровичев</div><span class="header__stick">|</span><a class="header__exit" href="#" data-popup-open="authorization">Выйти</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row justify-content-between"><button class="header__catalog"><svg width="172" height="24" viewBox="0 0 172 24" xmlns="http://www.w3.org/2000/svg">
-						<g fill="#555657" fill-rule="nonzero" opacity=".978">
-							<path d="M.42 23.515h7.334v-8.97h2.962c.632 0 1.166.63 1.652 1.94l2.476 7.03h7.965l-4.128-8.921c-.631-1.358-1.505-2.133-2.574-2.57v-.097c1.506-1.018 1.749-3.588 2.866-4.945.388-.437.874-.679 1.554-.679a4.36 4.36 0 0 1 1.457.242V.388C21.207.097 19.847 0 19.118 0c-2.185 0-3.545.776-4.468 1.94-2.088 2.666-1.991 7.127-4.614 7.127H7.754V.582H.42v22.933zM40.002 23.515h6.022c-.389-1.26-.389-3.103-.389-4.509V8.727C45.635 3.152 42.721 0 35.631 0c-3.643 0-6.751.873-9.47 2.23l2.282 4.606c1.651-.872 3.885-1.406 5.828-1.406 2.477 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.33.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.857-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.749.824-3.351.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.632-.388 1.554-.582 2.72-.63l2.477-.097zM56.028 23.515h7.334V6.594h6.362L71.569.582H49.326v6.012h6.702zM88.907 23.515h6.022c-.388-1.26-.388-3.103-.388-4.509V8.727C94.54 3.152 91.627 0 84.536 0c-3.642 0-6.75.873-9.47 2.23l2.283 4.606c1.65-.872 3.885-1.406 5.828-1.406 2.476 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.331.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.856-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.748.824-3.35.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.631-.388 1.554-.582 2.72-.63l2.476-.097zM99.446 23.855c2.817 0 4.808-.97 6.314-2.764 2.428-2.86 3.933-7.855 4.662-14.06h3.4v16.484h7.333V.582H105.03c-1.02 8-2.622 13.285-4.274 15.515-.631.873-1.36 1.26-2.234 1.26-.097 0-.485 0-.825-.096v6.4c.582.145 1.31.194 1.748.194zM137.279 24c7.139 0 12.093-5.042 12.093-12.024C149.372 4.994 144.418 0 137.279 0c-7.14 0-12.093 4.994-12.093 11.976 0 6.982 4.954 12.024 12.093 12.024zm0-5.77c-3.254 0-4.614-2.715-4.614-6.254 0-3.54 1.36-6.206 4.614-6.206 3.254 0 4.613 2.666 4.613 6.206 0 3.54-1.36 6.254-4.613 6.254zM153.403 23.515h7.333V7.03h8.693L171.42.582h-18.017z" />
-						</g>
-					</svg></button>
-				<div class="header__right"><input class="header__search" placeholder="Арматурный прокат или Гост" /><button class="header__button-search"><svg width="128" height="24" viewBox="0 0 128 24" xmlns="http://www.w3.org/2000/svg">
-							<g fill="#555657" fill-rule="nonzero">
-								<path d="M.291 23.515h7.333V7.03h7.091v16.485h7.334V.582H.29zM38.172 24c7.14 0 12.093-5.042 12.093-12.024C50.265 4.994 45.312 0 38.172 0 31.033 0 26.08 4.994 26.08 11.976 26.08 18.958 31.033 24 38.172 24zm0-5.77c-3.254 0-4.613-2.715-4.613-6.254 0-3.54 1.36-6.206 4.613-6.206 3.254 0 4.614 2.666 4.614 6.206 0 3.54-1.36 6.254-4.614 6.254zM54.296 23.515h7.188l5.925-8.582c1.263-1.842 2.477-3.927 2.914-4.751h.146c-.146 1.26-.243 3.248-.243 5.14v8.193h7.14V.582h-7.189l-5.925 8.582c-1.262 1.842-2.477 3.927-2.914 4.751h-.145c.145-1.26.243-3.248.243-5.14V.583h-7.14v22.933zM93.538 24c3.35 0 6.41-.97 8.353-2.376l-2.04-4.945c-1.748.97-3.302 1.551-5.245 1.551-3.448 0-5.73-2.133-5.73-6.109 0-3.54 2.185-6.351 6.021-6.351 2.234 0 3.983.678 5.683 1.988V1.697C99.414.921 97.326 0 94.023 0 87.37 0 81.396 4.752 81.396 12.17c0 6.788 4.371 11.83 12.142 11.83zM104.902 23.515h7.334v-8.97h2.962c.631 0 1.166.63 1.651 1.94l2.477 7.03h7.965l-4.128-8.921c-.632-1.358-1.506-2.133-2.574-2.57v-.097c1.505-1.018 1.748-3.588 2.865-4.945.389-.437.874-.679 1.554-.679a4.36 4.36 0 0 1 1.457.242V.388C125.688.097 124.328 0 123.6 0c-2.186 0-3.545.776-4.468 1.94-2.088 2.666-1.991 7.127-4.614 7.127h-2.282V.582h-7.334v22.933z" />
+				<div class="row justify-content-between noWrap"><button class="header__catalog"><svg width="172" height="24" viewBox="0 0 172 24" xmlns="http://www.w3.org/2000/svg">
+							<g fill="#555657" fill-rule="nonzero" opacity=".978">
+								<path d="M.42 23.515h7.334v-8.97h2.962c.632 0 1.166.63 1.652 1.94l2.476 7.03h7.965l-4.128-8.921c-.631-1.358-1.505-2.133-2.574-2.57v-.097c1.506-1.018 1.749-3.588 2.866-4.945.388-.437.874-.679 1.554-.679a4.36 4.36 0 0 1 1.457.242V.388C21.207.097 19.847 0 19.118 0c-2.185 0-3.545.776-4.468 1.94-2.088 2.666-1.991 7.127-4.614 7.127H7.754V.582H.42v22.933zM40.002 23.515h6.022c-.389-1.26-.389-3.103-.389-4.509V8.727C45.635 3.152 42.721 0 35.631 0c-3.643 0-6.751.873-9.47 2.23l2.282 4.606c1.651-.872 3.885-1.406 5.828-1.406 2.477 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.33.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.857-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.749.824-3.351.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.632-.388 1.554-.582 2.72-.63l2.477-.097zM56.028 23.515h7.334V6.594h6.362L71.569.582H49.326v6.012h6.702zM88.907 23.515h6.022c-.388-1.26-.388-3.103-.388-4.509V8.727C94.54 3.152 91.627 0 84.536 0c-3.642 0-6.75.873-9.47 2.23l2.283 4.606c1.65-.872 3.885-1.406 5.828-1.406 2.476 0 4.03.873 4.03 3.006v.243l-3.642.145c-2.331.097-4.42.534-6.07 1.406-2.38 1.26-3.837 3.152-3.837 6.255 0 4.412 3.302 7.515 7.819 7.515 2.865 0 4.856-1.067 6.41-2.424l1.02 1.94zm-1.7-10.23v4.267c-.534.339-1.748.824-3.35.824-1.749 0-2.866-.776-2.866-2.376 0-.97.34-1.552 1.02-1.988.631-.388 1.554-.582 2.72-.63l2.476-.097zM99.446 23.855c2.817 0 4.808-.97 6.314-2.764 2.428-2.86 3.933-7.855 4.662-14.06h3.4v16.484h7.333V.582H105.03c-1.02 8-2.622 13.285-4.274 15.515-.631.873-1.36 1.26-2.234 1.26-.097 0-.485 0-.825-.096v6.4c.582.145 1.31.194 1.748.194zM137.279 24c7.139 0 12.093-5.042 12.093-12.024C149.372 4.994 144.418 0 137.279 0c-7.14 0-12.093 4.994-12.093 11.976 0 6.982 4.954 12.024 12.093 12.024zm0-5.77c-3.254 0-4.614-2.715-4.614-6.254 0-3.54 1.36-6.206 4.614-6.206 3.254 0 4.613 2.666 4.613 6.206 0 3.54-1.36 6.254-4.613 6.254zM153.403 23.515h7.333V7.03h8.693L171.42.582h-18.017z" />
 							</g>
-						</svg></button></div>
+						</svg></button>
+					<div class="header__right"><input class="header__search" placeholder="Арматурный прокат или Гост" /><button class="header__button-search"><svg width="128" height="24" viewBox="0 0 128 24" xmlns="http://www.w3.org/2000/svg">
+								<g fill="#555657" fill-rule="nonzero">
+									<path d="M.291 23.515h7.333V7.03h7.091v16.485h7.334V.582H.29zM38.172 24c7.14 0 12.093-5.042 12.093-12.024C50.265 4.994 45.312 0 38.172 0 31.033 0 26.08 4.994 26.08 11.976 26.08 18.958 31.033 24 38.172 24zm0-5.77c-3.254 0-4.613-2.715-4.613-6.254 0-3.54 1.36-6.206 4.613-6.206 3.254 0 4.614 2.666 4.614 6.206 0 3.54-1.36 6.254-4.614 6.254zM54.296 23.515h7.188l5.925-8.582c1.263-1.842 2.477-3.927 2.914-4.751h.146c-.146 1.26-.243 3.248-.243 5.14v8.193h7.14V.582h-7.189l-5.925 8.582c-1.262 1.842-2.477 3.927-2.914 4.751h-.145c.145-1.26.243-3.248.243-5.14V.583h-7.14v22.933zM93.538 24c3.35 0 6.41-.97 8.353-2.376l-2.04-4.945c-1.748.97-3.302 1.551-5.245 1.551-3.448 0-5.73-2.133-5.73-6.109 0-3.54 2.185-6.351 6.021-6.351 2.234 0 3.983.678 5.683 1.988V1.697C99.414.921 97.326 0 94.023 0 87.37 0 81.396 4.752 81.396 12.17c0 6.788 4.371 11.83 12.142 11.83zM104.902 23.515h7.334v-8.97h2.962c.631 0 1.166.63 1.651 1.94l2.477 7.03h7.965l-4.128-8.921c-.632-1.358-1.506-2.133-2.574-2.57v-.097c1.505-1.018 1.748-3.588 2.865-4.945.389-.437.874-.679 1.554-.679a4.36 4.36 0 0 1 1.457.242V.388C125.688.097 124.328 0 123.6 0c-2.186 0-3.545.776-4.468 1.94-2.088 2.666-1.991 7.127-4.614 7.127h-2.282V.582h-7.334v22.933z" />
+								</g>
+							</svg></button></div>
+				</div>
 			</div>
-		</div>
-	</header>
-	<main class="main">
-		<div class="container">
+		</header>
+		<main class="main">
 			<section class="section-breadcrumbs">
-				<div class="section-breadcrumbs__inner"><a class="section-breadcrumbs__link" href="/" data-popup-open="payment-entity">Главная</a><span class="section-breadcrumbs__link">/</span><span class="section-breadcrumbs__link" data-popup-open="pay-check">Информация о товаре</span></div><a class="section-breadcrumbs__back" href="#" data-popup-open="payment">Назад</a>
+				<div class="container">
+					<div class="section-breadcrumbs__inner"><a class="section-breadcrumbs__link" href="/" data-popup-open="payment-entity">Главная</a><span class="section-breadcrumbs__link">/</span><span class="section-breadcrumbs__link" data-popup-open="pay-check">Информация о товаре</span></div><a class="section-breadcrumbs__back" href="#" data-popup-open="payment">Назад</a>
+				</div>
 			</section>
-		</div>
-		<section class="section-product-details block-layout block-layout_none-right">
-			<div class="container">
-				<div class="row rg-30 align-items-start">
-					<div class="block-layout__left">
-						<div class="section-product-details__header"><a class="section-product-details__category" href="#">Арматурный прокат</a>
-							<p class="section-product-details__articule">Арт. 0000545-MT</p>
-						</div>
-						<h2 class="section-product-details__product-title">Лист горячекатный, 60мм, 1500х600 (A240)</h2>
-						<h2 class="section-product-details__product-subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</h2>
-						<div class="section-product-details__information-block">
-							<div class="accordion-list">
-								<div class="accordion accordion_fz-20 accordion_reset">
-									<div class="accordion__title">Характеристики</div>
-									<div class="accordion__body">
-										<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Категория А240</a><a class="accordion-list__link" href="#">Лист горячекатный</a><a class="accordion-list__link" href="#">В листах</a><a class="accordion-list__link" href="#">Стандарт ГОСТ 34028-2016</a></div>
-									</div>
-								</div>
+			<section class="section-product-details block-layout block-layout_none-right">
+				<div class="container">
+					<div class="row rg-30 align-items-start">
+						<div class="block-layout__left">
+							<div class="section-product-details__header"><a class="section-product-details__category" href="#">Арматурный прокат</a>
+								<p class="section-product-details__articule">Арт. 0000545-MT</p>
 							</div>
-						</div>
-						<div class="section-product-details__categories"><a class="section-product-details__category-value" href="#">Категория А240</a><a class="section-product-details__category-value" href="#">Лист горячекатный</a><a class="section-product-details__category-value" href="#">В листах</a><a class="section-product-details__category-value" href="#">Стандарт ГОСТ 34028-2016</a></div>
-						<div class="section-product-details__main">
-							<div class="section-product-details__product-slider">
-								<div class="product-swiper gallery-top">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="img" /></div>
-										<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="img" /></div>
-										<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="img" /></div>
-									</div>
-									<div class="swiper-button-next"></div>
-									<div class="swiper-button-prev"></div>
-								</div>
-								<div class="product-swiper gallery-thumbs">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="img" /></div>
-										<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="img" /></div>
-										<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="img" /></div>
-									</div>
-								</div>
-							</div>
-							<div class="section-product-details__product-information">
-								<div class="section-product-details__product-information-wrapper">
-									<div class="select"><button class="select__button">Диаметр, 60 мм</button>
-										<div class="select__option-wrapper">
-											<p class="select__option" value="Толщина, 10 мм">Толщина, 10 мм</p>
-											<p class="select__option" value="Толщина, 20 мм">Толщина, 20 мм</p>
-											<p class="select__option" value="Толщина, 30 мм">Толщина, 30 мм</p>
-											<p class="select__option" value="Толщина, 40 мм">Толщина, 40 мм</p>
-											<p class="select__option" value="Толщина, 50 мм">Толщина, 50 мм</p>
+							<h2 class="section-product-details__product-title">Лист горячекатный, 60мм, 1500х600 (A240)</h2>
+							<h2 class="section-product-details__product-subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</h2>
+							<div class="section-product-details__information-block">
+								<div class="accordion-list">
+									<div class="accordion accordion_fz-20 accordion_reset">
+										<div class="accordion__title">Характеристики</div>
+										<div class="accordion__body">
+											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Категория А240</a><a class="accordion-list__link" href="#">Лист горячекатный</a><a class="accordion-list__link" href="#">В листах</a><a class="accordion-list__link" href="#">Стандарт ГОСТ 34028-2016</a></div>
 										</div>
 									</div>
-									<div class="section-product-details__item-wrapper">
+								</div>
+							</div>
+							<div class="section-product-details__categories"><a class="section-product-details__category-value" href="#">Категория А240</a><a class="section-product-details__category-value" href="#">Лист горячекатный</a><a class="section-product-details__category-value" href="#">В листах</a><a class="section-product-details__category-value" href="#">Стандарт ГОСТ 34028-2016</a></div>
+							<div class="section-product-details__main">
+								<div class="section-product-details__product-slider">
+									<div class="product-swiper gallery-top">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="img" /></div>
+											<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="img" /></div>
+											<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="img" /></div>
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+									<div class="product-swiper gallery-thumbs">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="img" /></div>
+											<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="img" /></div>
+											<div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="img" /></div>
+										</div>
+									</div>
+								</div>
+								<div class="section-product-details__product-information">
+									<div class="section-product-details__product-information-wrapper">
+										<div class="select"><button class="select__button">Диаметр, 60 мм</button>
+											<div class="select__option-wrapper"><a class="select__option" value="Толщина, 10 мм" href="#">Толщина, 10 мм</a><a class="select__option" value="Толщина, 20 мм" href="#">Толщина, 20 мм</a><a class="select__option" value="Толщина, 30 мм" href="#">Толщина, 30 мм</a><a class="select__option" value="Толщина, 40 мм" href="#">Толщина, 40 мм</a><a class="select__option" value="Толщина, 50 мм" href="#">Толщина, 50 мм</a></div>
+										</div>
+										<div class="section-product-details__item-wrapper">
+											<div class="product-item">
+												<div class="product-item__column">
+													<p class="text">60 мм</p>
+													<p class="text">1500 x 600 мм</p>
+												</div>
+												<div class="product-item__column">
+													<p class="text">за 1 тонну</p>
+													<p class="text">115 400 р.</p>
+												</div>
+												<div class="product-item__column">
+													<p class="text">за 1 м2</p>
+													<p class="text">12 400 р.</p>
+												</div>
+												<div class="product-item__column">
+													<p class="text">за 1 лист</p>
+													<p class="text">35 800 р.</p>
+												</div>
+												<div class="product-item__basket-wrapper">
+													<p class="product-item__basket-description">Добавьте в корзину и рассчитайте точный необходимий обьем</p>
+													<div class="product-item__basket-img" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+															<defs>
+																<clipPath id="dl3q6myura">
+																	<path d="M4500 0v5500H0V0h4500z" />
+																</clipPath>
+																<clipPath id="a5dmji0u5b">
+																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																</clipPath>
+																<clipPath id="hx4p2o3vkc">
+																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																</clipPath>
+															</defs>
+															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																<g>
+																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																		<path d="M0 0h68.735v49.434H0V0z" />
+																	</g>
+																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																		<path d="M0 0h8.588v8.595H0V0z" />
+																	</g>
+																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																		<path d="M0 0h8.588v8.595H0V0z" />
+																	</g>
+																</g>
+															</g>
+														</svg></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr class="section-product-details__line" />
+							<div class="section-product-details__cart">
+								<div class="section-product-details__cart-title">В вашей корзине (3)</div>
+								<div class="section-product-details__content">
+									<div class="table-product-row"><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">3000</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">1,558 т.</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">Изменить</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">37 472 549 / р.</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<div class="table-product-row__icon"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.747.434a1.48 1.48 0 0 0-2.095 0L6.091 3.996 2.528.434A1.48 1.48 0 1 0 .434 2.53l3.561 3.562L.434 9.653a1.482 1.482 0 0 0 2.094 2.095l3.563-3.562 3.561 3.562a1.482 1.482 0 0 0 2.095-2.095L8.186 6.091l3.561-3.562a1.48 1.48 0 0 0 0-2.095" fill="#454545" fill-rule="evenodd" opacity=".601" />
+													</svg></div>
+											</div>
+										</a></div>
+									<div class="table-product-row"><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">3000</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">0,958 т.</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">Изменить</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">2 472 549 / р.</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<div class="table-product-row__icon"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.747.434a1.48 1.48 0 0 0-2.095 0L6.091 3.996 2.528.434A1.48 1.48 0 1 0 .434 2.53l3.561 3.562L.434 9.653a1.482 1.482 0 0 0 2.094 2.095l3.563-3.562 3.561 3.562a1.482 1.482 0 0 0 2.095-2.095L8.186 6.091l3.561-3.562a1.48 1.48 0 0 0 0-2.095" fill="#454545" fill-rule="evenodd" opacity=".601" />
+													</svg></div>
+											</div>
+										</a></div>
+									<div class="table-product-row"><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">Круг алюминиевый 2 мм АМГ6</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">3000</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">0,200 т.</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">Изменить</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<p class="text">500 549 / р.</p>
+											</div>
+										</a><a class="table-product-row__link" href="#">
+											<div class="table-product-row__column">
+												<div class="table-product-row__icon"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.747.434a1.48 1.48 0 0 0-2.095 0L6.091 3.996 2.528.434A1.48 1.48 0 1 0 .434 2.53l3.561 3.562L.434 9.653a1.482 1.482 0 0 0 2.094 2.095l3.563-3.562 3.561 3.562a1.482 1.482 0 0 0 2.095-2.095L8.186 6.091l3.561-3.562a1.48 1.48 0 0 0 0-2.095" fill="#454545" fill-rule="evenodd" opacity=".601" />
+													</svg></div>
+											</div>
+										</a></div>
+								</div>
+							</div>
+							<hr class="section-product-details__line" />
+							<div class="section-product-details__footer">
+								<div class="tabs tabs_mb-14">
+									<div class="tabs__buttons"><button class="tabs__button js-active" data-tab-button="1">Описание товара</button><button class="tabs__button" data-tab-button="2">Документы</button><button class="tabs__button" data-tab-button="3">Оплата и доставка</button><button class="tabs__button" data-tab-button="4">Расчитать по вашей смете</button></div>
+									<div class="tabs__body">
+										<div class="tabs__content js-active" data-tab-content="1">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины. Гладкая арматура часто используют в качестве соединительных прутов для вязки каркаса, удерживая основные стержни в нужных местах. В качестве такого дополнительного компонента ее используют во многих типах сооружений, в том числе подземных и водных. Арматура А240 обладает рядом преимуществ: надежность, особенности производства позволяют использовать ее для создания сложных конструкций, расположенных на наиболее ответственных участках, устойчивость к любым видам коррозии, устойчивость перед воздействием химических и биологических факторов, отличная гибкость, твердость и высокий уровень прочности, доступная стоимость и довольно широкий ассортимент. Реализуется металлическая арматура либо в мотках, либо пачками в виде прутков.</div>
+										<div class="tabs__content" data-tab-content="2">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины.</div>
+										<div class="tabs__content" data-tab-content="3">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины.</div>
+										<div class="tabs__content" data-tab-content="4">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины. Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины.</div>
+									</div>
+								</div><button class="section-product-details__button js-collapse mb-30">Развернуть</button>
+							</div>
+							<div class="section-product-details__footer-mobile">
+								<div class="section-product-details__filters"><a class="section-product-details__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="section-product-details__filter-value" data-filter-categories="М2">М2</a><a class="section-product-details__filter-value" data-filter-categories="Шт.">Шт.</a></div>
+								<div class="section-product-details__counter-wrapper"><button class="section-product-details__minus"></button>
+									<p class="section-product-details__count">0,500 т</p><button class="section-product-details__plus"></button>
+								</div>
+								<div class="section-product-details__total-wrapper">
+									<p class="section-product-details__total">Итого:</p>
+									<div class="section-product-details__price-wrapper">
+										<p class="section-product-details__total-price">100 000</p>
+										<p class="section-product-details__value">p</p>
+									</div>
+									<p class="section-product-details__measure">≈ 0,500 т / 6,4 м2</p>
+								</div><button class="section-product-details__basket-btn">В корзину</button>
+								<p class="section-product-details__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p>
+							</div>
+						</div>
+						<div class="block-layout__right">
+							<div class="section-product-details__product-item-details">
+								<p class="section-product-details__title">Лист горячекатный, 60мм, 1500х600</p>
+								<p class="section-product-details__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
+								<div class="section-product-details__filters"><a class="section-product-details__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="section-product-details__filter-value" data-filter-categories="М2">М2</a><a class="section-product-details__filter-value" data-filter-categories="Шт.">Шт.</a></div>
+								<div class="section-product-details__counter-wrapper"><button class="section-product-details__minus"></button>
+									<p class="section-product-details__count">0,500 т</p><button class="section-product-details__plus"></button>
+								</div>
+								<div class="section-product-details__total-wrapper">
+									<p class="section-product-details__total">Итого:</p>
+									<div class="section-product-details__price-wrapper">
+										<p class="section-product-details__total-price">100 000</p>
+										<p class="section-product-details__value">p.</p>
+									</div>
+									<p class="section-product-details__measure">≈ 0,500 т / 6,4 м2</p>
+								</div><button class="section-product-details__basket-btn">В корзину</button>
+								<p class="section-product-details__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p>
+							</div>
+							<div class="calculation-order">
+								<p class="calculation-order__title">Рассчитайте стоимость заказа</p>
+								<div class="calculation-order__range"></div>
+								<div class="calculation-order__description-wrapper">
+									<p class="calculation-order__subtitle">Прикрепите вашу смету и наш менеджер сам рассчитает стоимость вашего заказа в соответствии с вашим обьемом</p>
+									<div class="calculation-order__presentation-wrapper"><img class="calculation-order__presentation-img" src="/images/logo.svg" alt="" />
+										<p class="calculation-order__presentation-info">Металлопрокат оптом и в розницу с доставкой по Москве и московской области</p>
+									</div><button class="calculation-order__btn btn-start">Прикрепить смету</button>
+								</div>
+								<div class="calculation-order__form-wrapper">
+									<form class="calculation-order__form">
+										<div class="calculation-order__files-wrapper"><a class="calculation-order__file-form" href="#">Смета для расчета «Автомойка».xlsx</a><a class="calculation-order__file-form" href="#">Арматура «Автомойка».doc</a></div><label class="calculation-order__field-item"><input name="name" required="required" /><span>Ваше имя</span></label><label class="calculation-order__field-item"><input name="email" required="required" /><span>E-mail</span></label><label class="calculation-order__field-item"><input name="phone" required="required" /><span>Телефон</span></label><label class="calculation-order__field-item"><textarea name="comment" required="required"></textarea><span>Комментарий</span></label>
+									</form>
+									<p class="calculation-order__form-description">Заполните обязательное поле</p><input class="calculation-order__btn-form" type="submit" />
+								</div><button class="calculation-order__btn btn-end">Закрыть</button>
+								<p class="calculation-order__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-catalog" data-type-section="general">
+				<div class="container">
+					<div class="section-catalog__catalog-wrapper">
+						<div class="section-catalog__left-aside">
+							<div class="section-catalog__logo"><img class="section-catalog__img" src="/images/catalog-banner.svg" />
+								<div class="section-catalog__banner"><span class="section-catalog__title">Металотека</span><span class="section-catalog__subtitle">Каталог</span>
+									<div class="section-catalog__range"></div>
+								</div>
+							</div>
+							<div class="section-catalog__navigation"><a class="section-catalog__category" href="#">Трубный прокат</a><a class="section-catalog__category" href="#">Арматурный прокат</a><a class="section-catalog__category" href="#">Метизная продукция</a><a class="section-catalog__category" href="#">Листовой прокат</a><a class="section-catalog__category" href="#">Нержавеющая сталь</a><a class="section-catalog__category" href="#">Цветные металлы</a><a class="section-catalog__category" href="#">Сортовой прокат</a>
+								<div class="section-catalog__accordion-wrapper">
+									<div class="accordion-list">
+										<div class="accordion accordion_fz-20 accordion_arrow">
+											<div class="accordion__title">Листовой прокат</div>
+											<div class="accordion__body">
+												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-list">
+										<div class="accordion accordion_fz-20 accordion_arrow">
+											<div class="accordion__title">Арматурный прокат</div>
+											<div class="accordion__body">
+												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-list">
+										<div class="accordion accordion_fz-20 accordion_arrow">
+											<div class="accordion__title">Метизная продукция</div>
+											<div class="accordion__body">
+												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-list">
+										<div class="accordion accordion_fz-20 accordion_arrow">
+											<div class="accordion__title">Трубный прокат</div>
+											<div class="accordion__body">
+												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-list">
+										<div class="accordion accordion_fz-20 accordion_arrow">
+											<div class="accordion__title">Нержавеющая сталь</div>
+											<div class="accordion__body">
+												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-list">
+										<div class="accordion accordion_fz-20 accordion_arrow">
+											<div class="accordion__title">Цветные металлы</div>
+											<div class="accordion__body">
+												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-list">
+										<div class="accordion accordion_fz-20 accordion_arrow">
+											<div class="accordion__title">Сортовой прокат</div>
+											<div class="accordion__body">
+												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-catalog__mobile-description">Металлопрокат оптом и в розницу с доставкой по Москве и московской области</div>
+						</div>
+						<div class="section-catalog__right-aside">
+							<div class="product-main">
+								<div class="product-main__wrapper"><span class="product-main__title">Трубный прокат</span>
+									<div class="product-main__range"></div>
+									<div class="product-main__information-block">
+										<div class="accordion-list">
+											<div class="accordion accordion_fz-20 accordion_reset">
+												<div class="accordion__title">Труба профильная (158)</div>
+												<div class="accordion__body">
+													<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-list">
+											<div class="accordion accordion_fz-20 accordion_reset">
+												<div class="accordion__title">Труба профильная (158)</div>
+												<div class="accordion__body">
+													<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-list">
+											<div class="accordion accordion_fz-20 accordion_reset">
+												<div class="accordion__title">Труба профильная (158)</div>
+												<div class="accordion__body">
+													<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-list">
+											<div class="accordion accordion_fz-20 accordion_reset">
+												<div class="accordion__title">Труба профильная (158)</div>
+												<div class="accordion__body">
+													<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-list">
+											<div class="accordion accordion_fz-20 accordion_reset">
+												<div class="accordion__title">Труба профильная (158)</div>
+												<div class="accordion__body">
+													<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-list">
+											<div class="accordion accordion_fz-20 accordion_reset">
+												<div class="accordion__title">Труба профильная (158)</div>
+												<div class="accordion__body">
+													<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-list">
+											<div class="accordion accordion_fz-20 accordion_reset">
+												<div class="accordion__title">Труба профильная (158)</div>
+												<div class="accordion__body">
+													<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-tags">
+								<div class="product-tags__tags-wrapper"><a class="product-tags__tag" href="#">Труба профильная</a><a class="product-tags__tag" href="#">Профильная</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">уголок</a><a class="product-tags__tag" href="#">лента</a><a class="product-tags__tag" href="#">плита</a><a class="product-tags__tag" href="#">шестигранник</a></div><img class="product-tags__img-bg" src="/images/catalog-bg.png" />
+							</div>
+							<div class="product-footer">
+								<div class="product-footer__footer-wrapper"><img class="product-footer__qr" src="/images/icon-qr.svg" />
+									<div class="contact-information-footer">
+										<div class="contact-information-footer__name"><span class="contact-information-footer__title">Metaloteka</span>
+											<div class="contact-information-footer__sub-title">Металлопрокат оптом и в розницу</div>
+											<p class="contact-information-footer__text">QR-код для загрузки реквизитов в мобильное приложение банка</p>
+										</div>
+									</div>
+									<div class="contact-information-footer">
+										<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="tel:+74955456420">+7 495 545 64 20</a>
+											<p class="contact-information-footer__text">Телефон клиентской поддержки</p>
+											<p class="contact-information-footer__text contact-information-footer__text_bold">Онлайн заявки и заказы обрабатываем с 9:00-18:00</p>
+										</div>
+									</div>
+									<div class="contact-information-footer">
+										<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a>
+											<p class="contact-information-footer__text">Напишите нам и мы постараемся ответить на все ваши вопросы</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-catalog" data-type-section="details">
+				<div class="container">
+					<div class="section-catalog__catalog-wrapper">
+						<div class="section-catalog__left-aside">
+							<div class="section-catalog__logo"><img class="section-catalog__img" src="/images/catalog-banner.svg" />
+								<div class="section-catalog__banner"><span class="section-catalog__title">Металотека</span><span class="section-catalog__subtitle">Листовой прокат</span>
+									<div class="section-catalog__range"></div>
+								</div>
+							</div>
+							<div class="section-catalog__navigation"><a class="section-catalog__selected-title" href="#">Цветные металлы</a>
+								<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Латунь (72)</a><a class="section-catalog__details-item" href="">Круг латунный</a><a class="section-catalog__details-item" href="">Латунная лента</a><a class="section-catalog__details-item" href="">Латунный лист</a><a class="section-catalog__details-item" href="">Латунная труба</a><a class="section-catalog__details-item" href="">Латунная проволока</a><a class="section-catalog__details-item" href="">Латунный шестигранник</a><a class="section-catalog__details-item" href="">Латунный квадрат</a></div>
+								<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Титан (124)</a><a class="section-catalog__details-item" href="">Титановая проволока</a><a class="section-catalog__details-item" href="">Титановый лист</a></div>
+								<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Медь (268)</a><a class="section-catalog__details-item" href="">Медный круг</a><a class="section-catalog__details-item" href="">Медная лента</a><a class="section-catalog__details-item" href="">Медный лист</a><a class="section-catalog__details-item" href="">Медная труба</a><a class="section-catalog__details-item" href="">Медная шина</a><a class="section-catalog__details-item" href="">Медная плита</a><a class="section-catalog__details-item" href="">Медная проволока</a></div>
+								<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Аллюминий (158)</a><a class="section-catalog__details-item" href="">Алюминиевый круг</a><a class="section-catalog__details-item" href="">Алюминиевая плита</a><a class="section-catalog__details-item" href="">Алюминиевая труба</a><a class="section-catalog__details-item" href="">Алюминиевый лист</a><a class="section-catalog__details-item" href="">Алюминиевый уголок</a><a class="section-catalog__details-item" href="">Алюминиевая проволока</a><a class="section-catalog__details-item" href="">Алюминиевый швеллер</a><a class="section-catalog__details-item" href="">Алюминиевая профильная труба</a><a class="section-catalog__details-item" href="">Лист алюминиевый</a><a class="section-catalog__details-item" href="">Алюминиевый лист</a><a class="section-catalog__details-item" href="">Алюминиевый уголок</a></div>
+							</div>
+							<div class="section-catalog__navigation-mobile">
+								<div class="section-catalog__navigation-mobile-wrapper"><a class="section-catalog__selected-title" href="#">Лист горячекатный</a>
+									<div class="select"><button class="select__button">Толщина, мм</button>
+										<div class="select__option-wrapper"><a class="select__option" value="Толщина, 10 мм" href="#">Толщина, 10 мм</a><a class="select__option" value="Толщина, 20 мм" href="#">Толщина, 20 мм</a><a class="select__option" value="Толщина, 30 мм" href="#">Толщина, 30 мм</a><a class="select__option" value="Толщина, 40 мм" href="#">Толщина, 40 мм</a><a class="select__option" value="Толщина, 50 мм" href="#">Толщина, 50 мм</a></div>
+									</div>
+									<div class="section-catalog__item-wrapper">
 										<div class="product-item">
+											<p class="product-item__title"><a class="product-item__link">Лист горячекатный, 60 мм</a></p>
+											<p class="product-item__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
 											<div class="product-item__column">
 												<p class="text">60 мм</p>
 												<p class="text">1500 x 600 мм</p>
@@ -187,977 +572,624 @@
 													</svg></div>
 											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="section-product-details__line" />
-						<div class="section-product-details__cart">
-							<div class="section-product-details__cart-title">В вашей корзине (3)</div>
-							<div class="section-product-details__content">
-								<div class="table-product-row">
-									<div class="table-product-row__column">
-										<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">3000</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">1,558 т.</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">Изменить</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">37 472 549 / р.</p>
-									</div>
-									<div class="table-product-row__column">
-										<div class="table-product-row__icon"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-												<path d="M11.747.434a1.48 1.48 0 0 0-2.095 0L6.091 3.996 2.528.434A1.48 1.48 0 1 0 .434 2.53l3.561 3.562L.434 9.653a1.482 1.482 0 0 0 2.094 2.095l3.563-3.562 3.561 3.562a1.482 1.482 0 0 0 2.095-2.095L8.186 6.091l3.561-3.562a1.48 1.48 0 0 0 0-2.095" fill="#454545" fill-rule="evenodd" opacity=".601" />
-											</svg></div>
-									</div>
-								</div>
-								<div class="table-product-row">
-									<div class="table-product-row__column">
-										<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">3000</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">0,958 т.</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">Изменить</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">2 472 549 / р.</p>
-									</div>
-									<div class="table-product-row__column">
-										<div class="table-product-row__icon"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-												<path d="M11.747.434a1.48 1.48 0 0 0-2.095 0L6.091 3.996 2.528.434A1.48 1.48 0 1 0 .434 2.53l3.561 3.562L.434 9.653a1.482 1.482 0 0 0 2.094 2.095l3.563-3.562 3.561 3.562a1.482 1.482 0 0 0 2.095-2.095L8.186 6.091l3.561-3.562a1.48 1.48 0 0 0 0-2.095" fill="#454545" fill-rule="evenodd" opacity=".601" />
-											</svg></div>
-									</div>
-								</div>
-								<div class="table-product-row">
-									<div class="table-product-row__column">
-										<p class="text">Круг алюминиевый 2 мм АМГ6</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">3000</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">0,200 т.</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">Изменить</p>
-									</div>
-									<div class="table-product-row__column">
-										<p class="text">500 549 / р.</p>
-									</div>
-									<div class="table-product-row__column">
-										<div class="table-product-row__icon"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
-												<path d="M11.747.434a1.48 1.48 0 0 0-2.095 0L6.091 3.996 2.528.434A1.48 1.48 0 1 0 .434 2.53l3.561 3.562L.434 9.653a1.482 1.482 0 0 0 2.094 2.095l3.563-3.562 3.561 3.562a1.482 1.482 0 0 0 2.095-2.095L8.186 6.091l3.561-3.562a1.48 1.48 0 0 0 0-2.095" fill="#454545" fill-rule="evenodd" opacity=".601" />
-											</svg></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="section-product-details__line" />
-						<div class="section-product-details__footer">
-							<div class="tabs">
-								<div class="tabs__buttons"><button class="tabs__button js-active" data-tab-button="1">Описание товара</button><button class="tabs__button" data-tab-button="2">Документы</button><button class="tabs__button" data-tab-button="3">Оплата и доставка</button><button class="tabs__button" data-tab-button="4">Расчитать по вашей смете</button></div>
-								<div class="tabs__body">
-									<div class="tabs__content js-active" data-tab-content="1">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины. Гладкая арматура часто используют в качестве соединительных прутов для вязки каркаса, удерживая основные стержни в нужных местах. В качестве такого дополнительного компонента ее используют во многих типах сооружений, в том числе подземных и водных. Арматура А240 обладает рядом преимуществ: надежность, особенности производства позволяют использовать ее для создания сложных конструкций, расположенных на наиболее ответственных участках, устойчивость к любым видам коррозии, устойчивость перед воздействием химических и биологических факторов, отличная гибкость, твердость и высокий уровень прочности, доступная стоимость и довольно широкий ассортимент. Реализуется металлическая арматура либо в мотках, либо пачками в виде прутков.</div>
-									<div class="tabs__content" data-tab-content="2">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины.</div>
-									<div class="tabs__content" data-tab-content="3">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины.</div>
-									<div class="tabs__content" data-tab-content="4">Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины. Арматура А240/А-I – гладкая арматура, относится к классу А-I, представляет собой металлический профиль, для изготовления которого используется легированная сталь с пониженным количеством углерода. Это единственная разновидность арматуры, которая не имеет рифления. Арматура А240 трактуется так: А - обозначает горячекатаный прокат, 240 – указывает на предел текучести металла и составляет 240 Н/мм2. Производится такая арматура методом горячей прокатки с дополнительным низкотемпературным отпуском, и именно благодаря этому достигается красивая ровная гладкая поверхность. Готовая арматура должна быть ровной, гладкой, без трещин и пятен, с правильной геометрией, не должно быть сколов и ржавчины.</div>
-								</div>
-							</div><button class="section-product-details__button js-collapse">Развернуть</button>
-						</div>
-						<div class="section-product-details__footer-mobile">
-							<div class="section-product-details__filters"><a class="section-product-details__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="section-product-details__filter-value" data-filter-categories="М2">М2</a><a class="section-product-details__filter-value" data-filter-categories="Шт.">Шт.</a></div>
-							<div class="section-product-details__counter-wrapper"><button class="section-product-details__minus"></button>
-								<p class="section-product-details__count">0,500 т</p><button class="section-product-details__plus"></button>
-							</div>
-							<div class="section-product-details__total-wrapper">
-								<p class="section-product-details__total">Итого:</p>
-								<div class="section-product-details__price-wrapper">
-									<p class="section-product-details__total-price">100 000</p>
-									<p class="section-product-details__value">p</p>
-								</div>
-								<p class="section-product-details__measure">≈ 0,500 т / 6,4 м2</p>
-							</div><button class="section-product-details__basket-btn">В корзину</button>
-							<p class="section-product-details__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p>
-						</div>
-					</div>
-					<div class="block-layout__right">
-						<div class="section-product-details__product-item-details">
-							<p class="section-product-details__title">Лист горячекатный, 60мм, 1500х600</p>
-							<p class="section-product-details__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
-							<div class="section-product-details__filters"><a class="section-product-details__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="section-product-details__filter-value" data-filter-categories="М2">М2</a><a class="section-product-details__filter-value" data-filter-categories="Шт.">Шт.</a></div>
-							<div class="section-product-details__counter-wrapper"><button class="section-product-details__minus"></button>
-								<p class="section-product-details__count">0,500 т</p><button class="section-product-details__plus"></button>
-							</div>
-							<div class="section-product-details__total-wrapper">
-								<p class="section-product-details__total">Итого:</p>
-								<div class="section-product-details__price-wrapper">
-									<p class="section-product-details__total-price">100 000</p>
-									<p class="section-product-details__value">p.</p>
-								</div>
-								<p class="section-product-details__measure">≈ 0,500 т / 6,4 м2</p>
-							</div><button class="section-product-details__basket-btn">В корзину</button>
-							<p class="section-product-details__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p>
-						</div>
-						<div class="calculation-order">
-							<p class="calculation-order__title">Рассчитайте стоимость заказа</p>
-							<div class="calculation-order__range"></div>
-							<div class="calculation-order__description-wrapper">
-								<p class="calculation-order__subtitle">Прикрепите вашу смету и наш менеджер сам рассчитает стоимость вашего заказа в соответствии с вашим обьемом</p>
-								<div class="calculation-order__presentation-wrapper"><img class="calculation-order__presentation-img" src="/images/logo.svg" alt="" />
-									<p class="calculation-order__presentation-info">Металлопрокат оптом и в розницу с доставкой по Москве и московской области</p>
-								</div><button class="calculation-order__btn btn-start">Прикрепить смету</button>
-							</div>
-							<div class="calculation-order__form-wrapper">
-								<form class="calculation-order__form">
-									<div class="calculation-order__files-wrapper"><a class="calculation-order__file-form" href="#">Смета для расчета «Автомойка».xlsx</a><a class="calculation-order__file-form" href="#">Арматура «Автомойка».doc</a></div><label class="calculation-order__field-item"><input name="name" required="required" /><span>Ваше имя</span></label><label class="calculation-order__field-item"><input name="email" required="required" /><span>E-mail</span></label><label class="calculation-order__field-item"><input name="phone" required="required" /><span>Телефон</span></label><label class="calculation-order__field-item"><textarea name="comment" required="required"></textarea><span>Комментарий</span></label>
-								</form>
-								<p class="calculation-order__form-description">Заполните обязательное поле</p><input class="calculation-order__btn-form" type="submit" />
-							</div><button class="calculation-order__btn btn-end">Закрыть</button>
-							<p class="calculation-order__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-catalog" data-type-section="general">
-			<div class="container">
-				<div class="section-catalog__catalog-wrapper">
-					<div class="section-catalog__left-aside">
-						<div class="section-catalog__logo"><img class="section-catalog__img" src="/images/catalog-banner.svg" />
-							<div class="section-catalog__banner"><span class="section-catalog__title">Металотека</span><span class="section-catalog__subtitle">Каталог</span>
-								<div class="section-catalog__range"></div>
-							</div>
-						</div>
-						<div class="section-catalog__navigation"><a class="section-catalog__category" href="#">Трубный прокат</a><a class="section-catalog__category" href="#">Арматурный прокат</a><a class="section-catalog__category" href="#">Метизная продукция</a><a class="section-catalog__category" href="#">Листовой прокат</a><a class="section-catalog__category" href="#">Нержавеющая сталь</a><a class="section-catalog__category" href="#">Цветные металлы</a><a class="section-catalog__category" href="#">Сортовой прокат</a>
-							<div class="section-catalog__accordion-wrapper">
-								<div class="accordion-list">
-									<div class="accordion accordion_fz-20 accordion_arrow">
-										<div class="accordion__title">Листовой прокат</div>
-										<div class="accordion__body">
-											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
-										</div>
-									</div>
-								</div>
-								<div class="accordion-list">
-									<div class="accordion accordion_fz-20 accordion_arrow">
-										<div class="accordion__title">Арматурный прокат</div>
-										<div class="accordion__body">
-											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
-										</div>
-									</div>
-								</div>
-								<div class="accordion-list">
-									<div class="accordion accordion_fz-20 accordion_arrow">
-										<div class="accordion__title">Метизная продукция</div>
-										<div class="accordion__body">
-											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
-										</div>
-									</div>
-								</div>
-								<div class="accordion-list">
-									<div class="accordion accordion_fz-20 accordion_arrow">
-										<div class="accordion__title">Трубный прокат</div>
-										<div class="accordion__body">
-											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
-										</div>
-									</div>
-								</div>
-								<div class="accordion-list">
-									<div class="accordion accordion_fz-20 accordion_arrow">
-										<div class="accordion__title">Нержавеющая сталь</div>
-										<div class="accordion__body">
-											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
-										</div>
-									</div>
-								</div>
-								<div class="accordion-list">
-									<div class="accordion accordion_fz-20 accordion_arrow">
-										<div class="accordion__title">Цветные металлы</div>
-										<div class="accordion__body">
-											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
-										</div>
-									</div>
-								</div>
-								<div class="accordion-list">
-									<div class="accordion accordion_fz-20 accordion_arrow">
-										<div class="accordion__title">Сортовой прокат</div>
-										<div class="accordion__body">
-											<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба водогазопроводная оцинкованная</a><a class="accordion-list__link" href="#">Трубы в изоляции</a><a class="accordion-list__link" href="#">Труба магистральная</a><a class="accordion-list__link" href="#">Труба Овальная</a><a class="accordion-list__link" href="#">Труба профильная</a><a class="accordion-list__link" href="#">Труба профильная</a></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-catalog__mobile-description">Металлопрокат оптом и в розницу с доставкой по Москве и московской области</div>
-					</div>
-					<div class="section-catalog__right-aside">
-						<div class="product-main">
-							<div class="product-main__wrapper"><span class="product-main__title">Трубный прокат</span>
-								<div class="product-main__range"></div>
-								<div class="product-main__information-block">
-									<div class="accordion-list">
-										<div class="accordion accordion_fz-20 accordion_reset">
-											<div class="accordion__title">Труба профильная (158)</div>
-											<div class="accordion__body">
-												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+										<div class="product-item">
+											<p class="product-item__title"><a class="product-item__link">Лист горячекатный, 60 мм</a></p>
+											<p class="product-item__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
+											<div class="product-item__column">
+												<p class="text">60 мм</p>
+												<p class="text">1500 x 600 мм</p>
 											</div>
-										</div>
-									</div>
-									<div class="accordion-list">
-										<div class="accordion accordion_fz-20 accordion_reset">
-											<div class="accordion__title">Труба профильная (158)</div>
-											<div class="accordion__body">
-												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+											<div class="product-item__column">
+												<p class="text">за 1 тонну</p>
+												<p class="text">115 400 р.</p>
 											</div>
-										</div>
-									</div>
-									<div class="accordion-list">
-										<div class="accordion accordion_fz-20 accordion_reset">
-											<div class="accordion__title">Труба профильная (158)</div>
-											<div class="accordion__body">
-												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+											<div class="product-item__column">
+												<p class="text">за 1 м2</p>
+												<p class="text">12 400 р.</p>
 											</div>
-										</div>
-									</div>
-									<div class="accordion-list">
-										<div class="accordion accordion_fz-20 accordion_reset">
-											<div class="accordion__title">Труба профильная (158)</div>
-											<div class="accordion__body">
-												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
+											<div class="product-item__column">
+												<p class="text">за 1 лист</p>
+												<p class="text">35 800 р.</p>
 											</div>
-										</div>
-									</div>
-									<div class="accordion-list">
-										<div class="accordion accordion_fz-20 accordion_reset">
-											<div class="accordion__title">Труба профильная (158)</div>
-											<div class="accordion__body">
-												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
-											</div>
-										</div>
-									</div>
-									<div class="accordion-list">
-										<div class="accordion accordion_fz-20 accordion_reset">
-											<div class="accordion__title">Труба профильная (158)</div>
-											<div class="accordion__body">
-												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
-											</div>
-										</div>
-									</div>
-									<div class="accordion-list">
-										<div class="accordion accordion_fz-20 accordion_reset">
-											<div class="accordion__title">Труба профильная (158)</div>
-											<div class="accordion__body">
-												<div class="accordion-list__list-wrapper"><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a><a class="accordion-list__link" href="#">Труба профильная прямоугольная</a></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="product-tags">
-							<div class="product-tags__tags-wrapper"><a class="product-tags__tag" href="#">Труба профильная</a><a class="product-tags__tag" href="#">Профильная</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">уголок</a><a class="product-tags__tag" href="#">лента</a><a class="product-tags__tag" href="#">плита</a><a class="product-tags__tag" href="#">шестигранник</a></div><img class="product-tags__img-bg" src="/images/catalog-bg.png" />
-						</div>
-						<div class="product-footer">
-							<div class="product-footer__footer-wrapper"><img class="product-footer__qr" src="/images/icon-qr.svg" />
-								<div class="contact-information-footer">
-									<div class="contact-information-footer__name"><span class="contact-information-footer__title">Metaloteka</span>
-										<div class="contact-information-footer__sub-title">Металлопрокат оптом и в розницу</div>
-										<p class="contact-information-footer__text">QR-код для загрузки реквизитов в мобильное приложение банка</p>
-									</div>
-								</div>
-								<div class="contact-information-footer">
-									<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="tel:+74955456420">+7 495 545 64 20</a>
-										<p class="contact-information-footer__text">Телефон клиентской поддержки</p>
-										<p class="contact-information-footer__text contact-information-footer__text_bold">Онлайн заявки и заказы обрабатываем с 9:00-18:00</p>
-									</div>
-								</div>
-								<div class="contact-information-footer">
-									<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a>
-										<p class="contact-information-footer__text">Напишите нам и мы постараемся ответить на все ваши вопросы</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-catalog" data-type-section="details">
-			<div class="container">
-				<div class="section-catalog__catalog-wrapper">
-					<div class="section-catalog__left-aside">
-						<div class="section-catalog__logo"><img class="section-catalog__img" src="/images/catalog-banner.svg" />
-							<div class="section-catalog__banner"><span class="section-catalog__title">Металотека</span><span class="section-catalog__subtitle">Листовой прокат</span>
-								<div class="section-catalog__range"></div>
-							</div>
-						</div>
-						<div class="section-catalog__navigation"><a class="section-catalog__selected-title" href="#">Цветные металлы</a>
-							<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Латунь (72)</a><a class="section-catalog__details-item" href="">Круг латунный</a><a class="section-catalog__details-item" href="">Латунная лента</a><a class="section-catalog__details-item" href="">Латунный лист</a><a class="section-catalog__details-item" href="">Латунная труба</a><a class="section-catalog__details-item" href="">Латунная проволока</a><a class="section-catalog__details-item" href="">Латунный шестигранник</a><a class="section-catalog__details-item" href="">Латунный квадрат</a></div>
-							<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Титан (124)</a><a class="section-catalog__details-item" href="">Титановая проволока</a><a class="section-catalog__details-item" href="">Титановый лист</a></div>
-							<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Медь (268)</a><a class="section-catalog__details-item" href="">Медный круг</a><a class="section-catalog__details-item" href="">Медная лента</a><a class="section-catalog__details-item" href="">Медный лист</a><a class="section-catalog__details-item" href="">Медная труба</a><a class="section-catalog__details-item" href="">Медная шина</a><a class="section-catalog__details-item" href="">Медная плита</a><a class="section-catalog__details-item" href="">Медная проволока</a></div>
-							<div class="section-catalog__details-navigation-wrapper"><a class="section-catalog__details-item" href="">Аллюминий (158)</a><a class="section-catalog__details-item" href="">Алюминиевый круг</a><a class="section-catalog__details-item" href="">Алюминиевая плита</a><a class="section-catalog__details-item" href="">Алюминиевая труба</a><a class="section-catalog__details-item" href="">Алюминиевый лист</a><a class="section-catalog__details-item" href="">Алюминиевый уголок</a><a class="section-catalog__details-item" href="">Алюминиевая проволока</a><a class="section-catalog__details-item" href="">Алюминиевый швеллер</a><a class="section-catalog__details-item" href="">Алюминиевая профильная труба</a><a class="section-catalog__details-item" href="">Лист алюминиевый</a><a class="section-catalog__details-item" href="">Алюминиевый лист</a><a class="section-catalog__details-item" href="">Алюминиевый уголок</a></div>
-						</div>
-						<div class="section-catalog__navigation-mobile">
-							<div class="section-catalog__navigation-mobile-wrapper"><a class="section-catalog__selected-title" href="#">Лист горячекатный</a>
-								<div class="select"><button class="select__button">Толщина, мм</button>
-									<div class="select__option-wrapper">
-										<p class="select__option" value="Толщина, 10 мм">Толщина, 10 мм</p>
-										<p class="select__option" value="Толщина, 20 мм">Толщина, 20 мм</p>
-										<p class="select__option" value="Толщина, 30 мм">Толщина, 30 мм</p>
-										<p class="select__option" value="Толщина, 40 мм">Толщина, 40 мм</p>
-										<p class="select__option" value="Толщина, 50 мм">Толщина, 50 мм</p>
-									</div>
-								</div>
-								<div class="section-catalog__item-wrapper">
-									<div class="product-item">
-										<p class="product-item__title">Лист горячекатный, 60 мм</p>
-										<p class="product-item__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
-										<div class="product-item__column">
-											<p class="text">60 мм</p>
-											<p class="text">1500 x 600 мм</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 тонну</p>
-											<p class="text">115 400 р.</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 м2</p>
-											<p class="text">12 400 р.</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 лист</p>
-											<p class="text">35 800 р.</p>
-										</div>
-										<div class="product-item__basket-wrapper">
-											<p class="product-item__basket-description">Добавьте в корзину и рассчитайте точный необходимий обьем</p>
-											<div class="product-item__basket-img" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-													<defs>
-														<clipPath id="dl3q6myura">
-															<path d="M4500 0v5500H0V0h4500z" />
-														</clipPath>
-														<clipPath id="a5dmji0u5b">
-															<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-														</clipPath>
-														<clipPath id="hx4p2o3vkc">
-															<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-														</clipPath>
-													</defs>
-													<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-														<g>
-															<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																<path d="M0 0h68.735v49.434H0V0z" />
-															</g>
-															<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																<path d="M0 0h8.588v8.595H0V0z" />
-															</g>
-															<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																<path d="M0 0h8.588v8.595H0V0z" />
+											<div class="product-item__basket-wrapper">
+												<p class="product-item__basket-description">Добавьте в корзину и рассчитайте точный необходимий обьем</p>
+												<div class="product-item__basket-img" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+														<defs>
+															<clipPath id="dl3q6myura">
+																<path d="M4500 0v5500H0V0h4500z" />
+															</clipPath>
+															<clipPath id="a5dmji0u5b">
+																<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+															</clipPath>
+															<clipPath id="hx4p2o3vkc">
+																<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+															</clipPath>
+														</defs>
+														<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+															<g>
+																<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																	<path d="M0 0h68.735v49.434H0V0z" />
+																</g>
+																<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																	<path d="M0 0h8.588v8.595H0V0z" />
+																</g>
+																<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																	<path d="M0 0h8.588v8.595H0V0z" />
+																</g>
 															</g>
 														</g>
-													</g>
-												</svg></div>
+													</svg></div>
+											</div>
 										</div>
-									</div>
-									<div class="product-item">
-										<p class="product-item__title">Лист горячекатный, 60 мм</p>
-										<p class="product-item__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
-										<div class="product-item__column">
-											<p class="text">60 мм</p>
-											<p class="text">1500 x 600 мм</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 тонну</p>
-											<p class="text">115 400 р.</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 м2</p>
-											<p class="text">12 400 р.</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 лист</p>
-											<p class="text">35 800 р.</p>
-										</div>
-										<div class="product-item__basket-wrapper">
-											<p class="product-item__basket-description">Добавьте в корзину и рассчитайте точный необходимий обьем</p>
-											<div class="product-item__basket-img" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-													<defs>
-														<clipPath id="dl3q6myura">
-															<path d="M4500 0v5500H0V0h4500z" />
-														</clipPath>
-														<clipPath id="a5dmji0u5b">
-															<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-														</clipPath>
-														<clipPath id="hx4p2o3vkc">
-															<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-														</clipPath>
-													</defs>
-													<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-														<g>
-															<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																<path d="M0 0h68.735v49.434H0V0z" />
-															</g>
-															<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																<path d="M0 0h8.588v8.595H0V0z" />
-															</g>
-															<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																<path d="M0 0h8.588v8.595H0V0z" />
-															</g>
-														</g>
-													</g>
-												</svg></div>
-										</div>
-									</div>
-									<div class="product-item">
-										<p class="product-item__title">Лист горячекатный, 60 мм</p>
-										<p class="product-item__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
-										<div class="product-item__column">
-											<p class="text">60 мм</p>
-											<p class="text">1500 x 600 мм</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 тонну</p>
-											<p class="text">115 400 р.</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 м2</p>
-											<p class="text">-</p>
-										</div>
-										<div class="product-item__column">
-											<p class="text">за 1 лист</p>
-											<p class="text">-</p>
-										</div>
-										<div class="product-item__basket-wrapper">
-											<p class="product-item__basket-description">Добавьте в корзину и рассчитайте точный необходимий обьем</p>
-											<div class="product-item__basket-img" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-													<defs>
-														<clipPath id="dl3q6myura">
-															<path d="M4500 0v5500H0V0h4500z" />
-														</clipPath>
-														<clipPath id="a5dmji0u5b">
-															<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-														</clipPath>
-														<clipPath id="hx4p2o3vkc">
-															<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-														</clipPath>
-													</defs>
-													<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-														<g>
-															<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																<path d="M0 0h68.735v49.434H0V0z" />
-															</g>
-															<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																<path d="M0 0h8.588v8.595H0V0z" />
-															</g>
-															<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																<path d="M0 0h8.588v8.595H0V0z" />
+										<div class="product-item">
+											<p class="product-item__title"><a class="product-item__link">Лист горячекатный, 60 мм</a></p>
+											<p class="product-item__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
+											<div class="product-item__column">
+												<p class="text">60 мм</p>
+												<p class="text">1500 x 600 мм</p>
+											</div>
+											<div class="product-item__column">
+												<p class="text">за 1 тонну</p>
+												<p class="text">115 400 р.</p>
+											</div>
+											<div class="product-item__column">
+												<p class="text">за 1 м2</p>
+												<p class="text">-</p>
+											</div>
+											<div class="product-item__column">
+												<p class="text">за 1 лист</p>
+												<p class="text">-</p>
+											</div>
+											<div class="product-item__basket-wrapper">
+												<p class="product-item__basket-description">Добавьте в корзину и рассчитайте точный необходимий обьем</p>
+												<div class="product-item__basket-img" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+														<defs>
+															<clipPath id="dl3q6myura">
+																<path d="M4500 0v5500H0V0h4500z" />
+															</clipPath>
+															<clipPath id="a5dmji0u5b">
+																<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+															</clipPath>
+															<clipPath id="hx4p2o3vkc">
+																<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+															</clipPath>
+														</defs>
+														<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+															<g>
+																<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																	<path d="M0 0h68.735v49.434H0V0z" />
+																</g>
+																<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																	<path d="M0 0h8.588v8.595H0V0z" />
+																</g>
+																<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																	<path d="M0 0h8.588v8.595H0V0z" />
+																</g>
 															</g>
 														</g>
-													</g>
-												</svg></div>
+													</svg></div>
+											</div>
 										</div>
-									</div>
-								</div><button class="section-catalog__btn-product-list">Загрузить еще</button>
+									</div><a class="section-catalog__btn-product-list" href="">Загрузить еще</a>
+								</div>
+								<div class="section-catalog__mobile-description">Металлопрокат оптом и в розницу с доставкой по Москве и московской области</div>
 							</div>
-							<div class="section-catalog__mobile-description">Металлопрокат оптом и в розницу с доставкой по Москве и московской области</div>
 						</div>
-					</div>
-					<div class="section-catalog__right-aside">
-						<div class="product-main-details">
-							<div class="product-main-details__wrapper"><span class="product-main-details__title">Цветные металлы</span>
-								<div class="product-main-details__range"></div>
-								<div class="product-main-details__information-block-details"><span class="product-main-details__aboveTitle">Алюминий</span><span class="product-main-details__subtitle">Алюминиевый круг</span>
-									<div class="product-main-details__wrapper-description"><span class="product-main-details__description">* Алюминиевый круг – вид плоского металлопроката, получаемый путем поперечной резки горячекатаных рулонов после их прокатки на полунепрерывных либо непрерывных станах.</span><span class="product-main-details__search-count">Найдено товаров (24)</span></div>
-									<div class="filter-group"><span class="filter-group__title">Диаметр (D) / мм</span>
-										<div class="filter-group__filters-wrapper">
-											<div class="filter-group__diameters">
-												<div class="filter-group__diameter-value" data-filter-diameters="1.5">1.5</div>
-												<div class="filter-group__diameter-value" data-filter-diameters="2">2</div>
-												<div class="filter-group__diameter-value" data-filter-diameters="4">4</div>
-												<div class="filter-group__diameter-value" data-filter-diameters="6">6</div>
-												<div class="filter-group__diameter-value active" data-filter-diameters="8">8</div>
-												<div class="filter-group__diameter-value" data-filter-diameters="10">10</div>
-												<div class="filter-group__diameter-value" data-filter-diameters="12">12</div>
-												<div class="filter-group__diameter-value" data-filter-diameters="16">16</div>
-												<div class="filter-group__diameter-value" data-filter-diameters="20">20</div>
-											</div>
-											<div class="filter-group__filters"><a class="filter-group__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="filter-group__filter-value" data-filter-categories="М2">М2</a><a class="filter-group__filter-value" data-filter-categories="Шт.">Шт.</a></div>
-										</div>
-									</div>
-									<div class="product-main-details__range-filters"></div>
-									<div class="product-list">
-										<div class="product-list__header">
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Название</p>
-													<p class="text">Наименование товара</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">D</p>
-													<p class="text">мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">Размер</p>
-													<p class="text">мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">Стандарт</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">Стоимость</p>
-													<p class="text">руб.</p>
-												</div>
+						<div class="section-catalog__right-aside">
+							<div class="product-main-details">
+								<div class="product-main-details__wrapper"><span class="product-main-details__title">Цветные металлы</span>
+									<div class="product-main-details__range"></div>
+									<div class="product-main-details__information-block-details"><span class="product-main-details__aboveTitle">Алюминий</span><span class="product-main-details__subtitle">Алюминиевый круг</span>
+										<div class="product-main-details__wrapper-description"><span class="product-main-details__description">* Алюминиевый круг – вид плоского металлопроката, получаемый путем поперечной резки горячекатаных рулонов после их прокатки на полунепрерывных либо непрерывных станах.</span><span class="product-main-details__search-count">Найдено товаров (24)</span></div>
+										<div class="filter-group"><span class="filter-group__title">Диаметр (D) / мм</span>
+											<div class="filter-group__filters-wrapper">
+												<div class="filter-group__diameters"><label class="filter-group__diameter-value" for="0" data-filter-diameters="1.5">1.5</label><input class="filter-group__input" id="0" type="checkbox" /><label class="filter-group__diameter-value" for="1" data-filter-diameters="2">2</label><input class="filter-group__input" id="1" type="checkbox" /><label class="filter-group__diameter-value" for="2" data-filter-diameters="4">4</label><input class="filter-group__input" id="2" type="checkbox" /><label class="filter-group__diameter-value" for="3" data-filter-diameters="6">6</label><input class="filter-group__input" id="3" type="checkbox" /><label class="filter-group__diameter-value active" for="4" data-filter-diameters="8">8</label><input class="filter-group__input" id="4" type="checkbox" /><label class="filter-group__diameter-value" for="5" data-filter-diameters="10">10</label><input class="filter-group__input" id="5" type="checkbox" /><label class="filter-group__diameter-value" for="6" data-filter-diameters="12">12</label><input class="filter-group__input" id="6" type="checkbox" /><label class="filter-group__diameter-value" for="7" data-filter-diameters="16">16</label><input class="filter-group__input" id="7" type="checkbox" /><label class="filter-group__diameter-value" for="8" data-filter-diameters="20">20</label><input class="filter-group__input" id="8" type="checkbox" /></div>
+												<div class="filter-group__filters"><a class="filter-group__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="filter-group__filter-value" data-filter-categories="М2">М2</a><a class="filter-group__filter-value" data-filter-categories="Шт.">Шт.</a></div>
 											</div>
 										</div>
-										<div class="product-list__content">
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">8 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">3000 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">ГОСТ 19425-74</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">22 472 549 / т.</p>
-													<p class="text">за тонну</p>
-												</div>
-												<div class="table-product-row__column">
-													<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-															<defs>
-																<clipPath id="dl3q6myura">
-																	<path d="M4500 0v5500H0V0h4500z" />
-																</clipPath>
-																<clipPath id="a5dmji0u5b">
-																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-																</clipPath>
-																<clipPath id="hx4p2o3vkc">
-																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-																</clipPath>
-															</defs>
-															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-																<g>
-																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																		<path d="M0 0h68.735v49.434H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																</g>
-															</g>
-														</svg></div>
-												</div>
+										<div class="product-main-details__range-filters"></div>
+										<div class="product-list">
+											<div class="product-list__header">
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Название</p>
+															<p class="text">Наименование товара</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">D</p>
+															<p class="text">мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Размер</p>
+															<p class="text">мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Стандарт</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Стоимость</p>
+															<p class="text">руб.</p>
+														</div>
+													</a></div>
 											</div>
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">8 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">3000 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text"></p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">870 549 / т.</p>
-													<p class="text">за тонну</p>
-												</div>
-												<div class="table-product-row__column">
-													<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-															<defs>
-																<clipPath id="dl3q6myura">
-																	<path d="M4500 0v5500H0V0h4500z" />
-																</clipPath>
-																<clipPath id="a5dmji0u5b">
-																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-																</clipPath>
-																<clipPath id="hx4p2o3vkc">
-																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-																</clipPath>
-															</defs>
-															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-																<g>
-																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																		<path d="M0 0h68.735v49.434H0V0z" />
+											<div class="product-list__content">
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">8 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">3000 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">ГОСТ 19425-74</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">22 472 549 / т.</p>
+															<p class="text">за тонну</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+																	<defs>
+																		<clipPath id="dl3q6myura">
+																			<path d="M4500 0v5500H0V0h4500z" />
+																		</clipPath>
+																		<clipPath id="a5dmji0u5b">
+																			<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																		</clipPath>
+																		<clipPath id="hx4p2o3vkc">
+																			<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																		</clipPath>
+																	</defs>
+																	<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																		<g>
+																			<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																				<path d="M0 0h68.735v49.434H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																		</g>
 																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
+																</svg></div>
+														</div>
+													</a></div>
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Круг алюминиевый 1,5 мм АМГ6</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">8 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">3000 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text"></p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">870 549 / т.</p>
+															<p class="text">за тонну</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+																	<defs>
+																		<clipPath id="dl3q6myura">
+																			<path d="M4500 0v5500H0V0h4500z" />
+																		</clipPath>
+																		<clipPath id="a5dmji0u5b">
+																			<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																		</clipPath>
+																		<clipPath id="hx4p2o3vkc">
+																			<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																		</clipPath>
+																	</defs>
+																	<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																		<g>
+																			<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																				<path d="M0 0h68.735v49.434H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																		</g>
 																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
+																</svg></div>
+														</div>
+													</a></div>
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Круг алюминиевый 2 мм АМГ6</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">8 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">3000 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">ГОСТ 19425-74</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">650 549 / т.</p>
+															<p class="text">за тонну</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<div class="table-product-row__icon added" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+																	<defs>
+																		<clipPath id="dl3q6myura">
+																			<path d="M4500 0v5500H0V0h4500z" />
+																		</clipPath>
+																		<clipPath id="a5dmji0u5b">
+																			<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																		</clipPath>
+																		<clipPath id="hx4p2o3vkc">
+																			<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																		</clipPath>
+																	</defs>
+																	<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																		<g>
+																			<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																				<path d="M0 0h68.735v49.434H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																		</g>
 																	</g>
-																</g>
-															</g>
-														</svg></div>
-												</div>
-											</div>
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Круг алюминиевый 2 мм АМГ6</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">8 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">3000 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">ГОСТ 19425-74</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">650 549 / т.</p>
-													<p class="text">за тонну</p>
-												</div>
-												<div class="table-product-row__column">
-													<div class="table-product-row__icon added" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-															<defs>
-																<clipPath id="dl3q6myura">
-																	<path d="M4500 0v5500H0V0h4500z" />
-																</clipPath>
-																<clipPath id="a5dmji0u5b">
-																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-																</clipPath>
-																<clipPath id="hx4p2o3vkc">
-																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-																</clipPath>
-															</defs>
-															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-																<g>
-																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																		<path d="M0 0h68.735v49.434H0V0z" />
+																</svg></div>
+														</div>
+													</a></div>
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Круг алюминиевый 6 мм АМГ6</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">8 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">3000 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text"></p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">855 549 / т.</p>
+															<p class="text">за тонну</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+																	<defs>
+																		<clipPath id="dl3q6myura">
+																			<path d="M4500 0v5500H0V0h4500z" />
+																		</clipPath>
+																		<clipPath id="a5dmji0u5b">
+																			<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																		</clipPath>
+																		<clipPath id="hx4p2o3vkc">
+																			<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																		</clipPath>
+																	</defs>
+																	<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																		<g>
+																			<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																				<path d="M0 0h68.735v49.434H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																		</g>
 																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
+																</svg></div>
+														</div>
+													</a></div>
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Круг алюминиевый 8 мм АМГ6</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">8 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">3000 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">ГОСТ 19425-74</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">49 / м.</p>
+															<p class="text">за метр</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+																	<defs>
+																		<clipPath id="dl3q6myura">
+																			<path d="M4500 0v5500H0V0h4500z" />
+																		</clipPath>
+																		<clipPath id="a5dmji0u5b">
+																			<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																		</clipPath>
+																		<clipPath id="hx4p2o3vkc">
+																			<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																		</clipPath>
+																	</defs>
+																	<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																		<g>
+																			<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																				<path d="M0 0h68.735v49.434H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																		</g>
 																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
+																</svg></div>
+														</div>
+													</a></div>
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Круг алюминиевый 8 мм АМГ6</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">8 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">1500 x 600 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">ГОСТ 19425-74</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">115 / м.</p>
+															<p class="text">за метр</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+																	<defs>
+																		<clipPath id="dl3q6myura">
+																			<path d="M4500 0v5500H0V0h4500z" />
+																		</clipPath>
+																		<clipPath id="a5dmji0u5b">
+																			<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																		</clipPath>
+																		<clipPath id="hx4p2o3vkc">
+																			<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																		</clipPath>
+																	</defs>
+																	<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																		<g>
+																			<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																				<path d="M0 0h68.735v49.434H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																		</g>
 																	</g>
-																</g>
-															</g>
-														</svg></div>
-												</div>
-											</div>
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Круг алюминиевый 6 мм АМГ6</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">8 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">3000 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text"></p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">855 549 / т.</p>
-													<p class="text">за тонну</p>
-												</div>
-												<div class="table-product-row__column">
-													<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-															<defs>
-																<clipPath id="dl3q6myura">
-																	<path d="M4500 0v5500H0V0h4500z" />
-																</clipPath>
-																<clipPath id="a5dmji0u5b">
-																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-																</clipPath>
-																<clipPath id="hx4p2o3vkc">
-																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-																</clipPath>
-															</defs>
-															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-																<g>
-																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																		<path d="M0 0h68.735v49.434H0V0z" />
+																</svg></div>
+														</div>
+													</a></div>
+												<div class="table-product-row"><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">20 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">1500 x 1500 мм</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">ГОСТ 4405-75</p>
+															<p class="text">ГОСТ 103-2006</p>
+															<p class="text">ГОСТ 19425-74</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<p class="text">125 549 / т.</p>
+															<p class="text">за тонну</p>
+														</div>
+													</a><a class="table-product-row__link" href="#">
+														<div class="table-product-row__column">
+															<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
+																	<defs>
+																		<clipPath id="dl3q6myura">
+																			<path d="M4500 0v5500H0V0h4500z" />
+																		</clipPath>
+																		<clipPath id="a5dmji0u5b">
+																			<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
+																		</clipPath>
+																		<clipPath id="hx4p2o3vkc">
+																			<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
+																		</clipPath>
+																	</defs>
+																	<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
+																		<g>
+																			<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
+																				<path d="M0 0h68.735v49.434H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																			<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
+																				<path d="M0 0h8.588v8.595H0V0z" />
+																			</g>
+																		</g>
 																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																</g>
-															</g>
-														</svg></div>
+																</svg></div>
+														</div>
+													</a></div>
+											</div><a class="product-list__btn-product-list" href="">Загрузить еще</a>
+											<div class="product-list__wrapper-pagination">
+												<p class="product-list__info-description">Всет товары в разделе имеют сертификаты качества и изготовлены по гостам. Вы можете запросить в офисе продаж всю необходимую документацию</p>
+												<div class="pagination">
+													<div class="list"><a class="btn-start" href=""><span>в начало<i class="fas fa-angel-left"></i></span></a><a class="first numb" href=""><span>1</span></a><a class="numb active" href=""><span>2</span></a><a class="dots" href=""><span>.....</span></a><a class="numb" href=""><span>5</span></a><a class="btn-next" href=""><span>следующая<i class="fas fa-angel-right"></i></span></a></div>
 												</div>
-											</div>
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Круг алюминиевый 8 мм АМГ6</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">8 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">3000 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">ГОСТ 19425-74</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">49 / м.</p>
-													<p class="text">за метр</p>
-												</div>
-												<div class="table-product-row__column">
-													<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-															<defs>
-																<clipPath id="dl3q6myura">
-																	<path d="M4500 0v5500H0V0h4500z" />
-																</clipPath>
-																<clipPath id="a5dmji0u5b">
-																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-																</clipPath>
-																<clipPath id="hx4p2o3vkc">
-																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-																</clipPath>
-															</defs>
-															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-																<g>
-																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																		<path d="M0 0h68.735v49.434H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																</g>
-															</g>
-														</svg></div>
-												</div>
-											</div>
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Круг алюминиевый 8 мм АМГ6</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">8 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">1500 x 600 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">ГОСТ 19425-74</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">115 / м.</p>
-													<p class="text">за метр</p>
-												</div>
-												<div class="table-product-row__column">
-													<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-															<defs>
-																<clipPath id="dl3q6myura">
-																	<path d="M4500 0v5500H0V0h4500z" />
-																</clipPath>
-																<clipPath id="a5dmji0u5b">
-																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-																</clipPath>
-																<clipPath id="hx4p2o3vkc">
-																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-																</clipPath>
-															</defs>
-															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-																<g>
-																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																		<path d="M0 0h68.735v49.434H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																</g>
-															</g>
-														</svg></div>
-												</div>
-											</div>
-											<div class="table-product-row">
-												<div class="table-product-row__column">
-													<p class="text">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">20 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">1500 x 1500 мм</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">ГОСТ 4405-75</p>
-													<p class="text">ГОСТ 103-2006</p>
-													<p class="text">ГОСТ 19425-74</p>
-												</div>
-												<div class="table-product-row__column">
-													<p class="text">125 549 / т.</p>
-													<p class="text">за тонну</p>
-												</div>
-												<div class="table-product-row__column">
-													<div class="table-product-row__icon" data-popup-open="product-item-details"><svg width="69" height="65" viewBox="0 0 69 65" xmlns="http://www.w3.org/2000/svg">
-															<defs>
-																<clipPath id="dl3q6myura">
-																	<path d="M4500 0v5500H0V0h4500z" />
-																</clipPath>
-																<clipPath id="a5dmji0u5b">
-																	<path d="M9.36 0a7.516 7.516 0 0 1 7.375 6.05l1.363 6.846h47.384a3.24 3.24 0 0 1 2.457 1.1c.62.71.897 1.654.763 2.586l-3.22 22.706c-.859 5.83-5.858 10.15-11.745 10.146H28.51a11.81 11.81 0 0 1-11.56-9.512L10.432 7.308a1.073 1.073 0 0 0-1.074-.86H0V0zm52.407 19.344h-42.38l3.865 19.343a5.37 5.37 0 0 0 5.259 4.299h25.163a5.37 5.37 0 0 0 5.367-4.61l2.726-19.032z" />
-																</clipPath>
-																<clipPath id="hx4p2o3vkc">
-																	<path d="M8.588 4.298c0 5.73-8.588 5.73-8.588 0s8.588-5.73 8.588 0z" />
-																</clipPath>
-															</defs>
-															<g fill="currentColor" clip-path="url(#dl3q6myura)" transform="translate(-2284 -595)">
-																<g>
-																	<g clip-path="url(#a5dmji0u5b)" transform="translate(2284 595.522)">
-																		<path d="M0 0h68.735v49.434H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2338.747 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																	<g clip-path="url(#hx4p2o3vkc)" transform="translate(2302.25 651.405)">
-																		<path d="M0 0h8.588v8.595H0V0z" />
-																	</g>
-																</g>
-															</g>
-														</svg></div>
-												</div>
-											</div>
-										</div><button class="product-list__btn-product-list">Загрузить еще</button>
-										<div class="product-list__wrapper-pagination">
-											<p class="product-list__info-description">Всет товары в разделе имеют сертификаты качества и изготовлены по гостам. Вы можете запросить в офисе продаж всю необходимую документацию</p>
-											<div class="pagination">
-												<ul class="list"></ul>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="product-tags">
-							<div class="product-tags__tags-wrapper"><a class="product-tags__tag" href="#">Труба профильная</a><a class="product-tags__tag" href="#">Профильная</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">уголок</a><a class="product-tags__tag" href="#">лента</a><a class="product-tags__tag" href="#">плита</a><a class="product-tags__tag" href="#">шестигранник</a></div><img class="product-tags__img-bg" src="/images/catalog-bg.png" />
-						</div>
-						<div class="product-footer">
-							<div class="product-footer__footer-wrapper"><img class="product-footer__qr" src="/images/icon-qr.svg" />
-								<div class="contact-information-footer">
-									<div class="contact-information-footer__name"><span class="contact-information-footer__title">Metaloteka</span>
-										<div class="contact-information-footer__sub-title">Металлопрокат оптом и в розницу</div>
-										<p class="contact-information-footer__text">QR-код для загрузки реквизитов в мобильное приложение банка</p>
+							<div class="product-tags">
+								<div class="product-tags__tags-wrapper"><a class="product-tags__tag" href="#">Труба профильная</a><a class="product-tags__tag" href="#">Профильная</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">Труба 8мм</a><a class="product-tags__tag" href="#">уголок</a><a class="product-tags__tag" href="#">лента</a><a class="product-tags__tag" href="#">плита</a><a class="product-tags__tag" href="#">шестигранник</a></div><img class="product-tags__img-bg" src="/images/catalog-bg.png" />
+							</div>
+							<div class="product-footer">
+								<div class="product-footer__footer-wrapper"><img class="product-footer__qr" src="/images/icon-qr.svg" />
+									<div class="contact-information-footer">
+										<div class="contact-information-footer__name"><span class="contact-information-footer__title">Metaloteka</span>
+											<div class="contact-information-footer__sub-title">Металлопрокат оптом и в розницу</div>
+											<p class="contact-information-footer__text">QR-код для загрузки реквизитов в мобильное приложение банка</p>
+										</div>
 									</div>
-								</div>
-								<div class="contact-information-footer">
-									<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="tel:+74955456420">+7 495 545 64 20</a>
-										<p class="contact-information-footer__text">Телефон клиентской поддержки</p>
-										<p class="contact-information-footer__text contact-information-footer__text_bold">Онлайн заявки и заказы обрабатываем с 9:00-18:00</p>
+									<div class="contact-information-footer">
+										<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="tel:+74955456420">+7 495 545 64 20</a>
+											<p class="contact-information-footer__text">Телефон клиентской поддержки</p>
+											<p class="contact-information-footer__text contact-information-footer__text_bold">Онлайн заявки и заказы обрабатываем с 9:00-18:00</p>
+										</div>
 									</div>
-								</div>
-								<div class="contact-information-footer">
-									<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a>
-										<p class="contact-information-footer__text">Напишите нам и мы постараемся ответить на все ваши вопросы</p>
+									<div class="contact-information-footer">
+										<div class="contact-information-footer__name"><a class="contact-information-footer__link" href="mailto:info@metaloteka.ru">info@metaloteka.ru</a>
+											<p class="contact-information-footer__text">Напишите нам и мы постараемся ответить на все ваши вопросы</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<div class="popup" data-popup="product-item-details">
+				<div class="product-item-details popup__body">
+					<p class="product-item-details__title">Труба профильная, 5 мм, 3000х60</p>
+					<p class="product-item-details__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
+					<div class="product-item-details__filters"><a class="product-item-details__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="product-item-details__filter-value" data-filter-categories="М2">М2</a><a class="product-item-details__filter-value" data-filter-categories="Шт.">Шт.</a></div>
+					<div class="product-item-details__counter-wrapper"><button class="product-item-details__minus"></button>
+						<p class="product-item-details__count">0,015 т</p><button class="product-item-details__plus"></button>
+					</div>
+					<div class="product-item-details__total-wrapper">
+						<p class="product-item-details__total">Итого:</p>
+						<div class="product-item-details__price-wrapper">
+							<p class="product-item-details__total-price">840</p>
+							<p class="product-item-details__value">p.</p>
+						</div>
+						<p class="product-item-details__measure">≈ 0,015 т / 3 м</p>
+					</div><button class="product-item-details__basket-btn">В корзину</button>
+					<p class="product-item-details__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p><button class="popup__close">Закрыть</button>
 				</div>
 			</div>
-		</section>
-		<div class="popup" data-popup="product-item-details">
-			<div class="product-item-details popup__body">
-				<p class="product-item-details__title">Труба профильная, 5 мм, 3000х60</p>
-				<p class="product-item-details__subtitle">Просечно-вытяжной лист, 16 мм (изготавливается по технологии горячекатного листа)</p>
-				<div class="product-item-details__filters"><a class="product-item-details__filter-value active" data-filter-categories="Тонны">Тонны</a><a class="product-item-details__filter-value" data-filter-categories="М2">М2</a><a class="product-item-details__filter-value" data-filter-categories="Шт.">Шт.</a></div>
-				<div class="product-item-details__counter-wrapper"><button class="product-item-details__minus"></button>
-					<p class="product-item-details__count">0,015 т</p><button class="product-item-details__plus"></button>
-				</div>
-				<div class="product-item-details__total-wrapper">
-					<p class="product-item-details__total">Итого:</p>
-					<div class="product-item-details__price-wrapper">
-						<p class="product-item-details__total-price">840</p>
-						<p class="product-item-details__value">p.</p>
+		</main>
+		<div class="bg-footer">
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__footer-top">
+						<div class="footer__metaloteka-icons">
+							<div class="footer__icons-font"><img class="footer__logo" src="/images/metaloteka-logo.svg" alt="логотип metaloteka" />
+								<p class="footer__icon-subtitle">Металлопрокат оптом и в розницу</p>
+							</div><a class="footer__metaloteka-logo" href="#"><img class="footer__metaloteka-logo_item" src="/images/logo.svg" alt="Logo" /></a>
+							<div class="footer__social"><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-mail.svg" alt="Mail" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-vk.svg" alt="Vk" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-tg.svg" alt="Telegram" /></a></div>
+						</div>
+						<div class="footer__clients">
+							<h2 class="footer__clients-title">Клиентам</h2><a class="footer__clients-item" href="#">О компании</a><a class="footer__clients-item" href="#">Каталог продукции</a><a class="footer__clients-item" href="#">Прайс-лист</a><a class="footer__clients-item" href="#">Доставка</a><a class="footer__clients-item" href="#">Оплата</a><a class="footer__clients-item" href="#">Сотрудничество</a><a class="footer__clients-item" href="#">Оптовые продажи</a><a class="footer__clients-item" href="#">Реквезиты организации</a><a class="footer__clients-item" href="/contacts.html">Контакты</a>
+						</div>
+						<div class="footer__catalog">
+							<h2 class="footer__catalog-title">Каталог</h2><a class="footer__catalog-item" href="#">Листовой прокат</a><a class="footer__catalog-item" href="#"> Арматурный прокат</a><a class="footer__catalog-item" href="#"> Метизная продукция</a><a class="footer__catalog-item" href="#"> Трубный прокат</a><a class="footer__catalog-item" href="#"> Нержавеющая сталь</a><a class="footer__catalog-item" href="#"> Цветные металлы</a>
+						</div>
+						<div class="footer__contacts">
+							<div class="footer__address-wrapper">
+								<p class="footer__subtitle" href="">Москва</p>
+								<p class="footer__messenger-title">г.Москва, ул.Воскресенская, 84 Бизнес-центр «Чистые пруды»</p>
+							</div>
+							<div class="footer__address-wrapper"><a class="footer__subtitle" href="+74955456420">+7 495 545 64 20</a>
+								<p class="footer__messenger-subtitle">Телефон клиентской поддержки</p>
+							</div>
+							<div class="footer__address-wrapper"><a class="footer__subtitle" href="client@metaloteka.ru">client@metaloteka.ru</a>
+								<p class="footer__messenger-subtitle">Адрес электронной почты</p>
+							</div>
+							<div class="footer__address-wrapper">
+								<p class="footer__subtitle" href="">Whatsapp |</p>
+								<p class="footer__messenger-subtitle">Напишите нам в мессенджер</p>
+							</div>
+						</div>
 					</div>
-					<p class="product-item-details__measure">≈ 0,015 т / 3 м</p>
-				</div><button class="product-item-details__basket-btn">В корзину</button>
-				<p class="product-item-details__description">Нажимая вы соглашаетесь с условиями и политикой конфеденциальности</p><button class="popup__close">Закрыть</button>
+					<div class="footer__requesites">
+						<div class="footer__requesites-info"><img class="footer__requesites-img" src="/images/icon-ruble.svg" alt="iconRuble" />
+							<div class="footer__individuals"><span class="footer__title-individuals">Физические лица</span><span class="footer__subtitle-individuals">Вы можете оплатить заказ наличными в нашем офисе или онлайн</span></div>
+							<div class="footer__legal-entities"><span class="footer__title-individuals">ИП и ООО</span><span class="footer__subtitle-individuals">Вы можете оплатить по сформированному счету после оформления заказа</span></div>
+						</div>
+						<div class="footer__bank-icons"><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/logo-sberbank.svg" alt="logo-sberbank" /></a><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/payment-logo-sbp.svg" alt="payment-logo-sbp" /></a><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/logo-mirlogo.svg" alt="logo-mirlogo" /></a></div><button class="footer__button">Написать</button>
+					</div>
+					<div class="footer__info-metaloteka">Metaloteka, 2021. Все ресурсы сайта www.metaloteka.ru, включая (но не ограничиваясь) текстовую, графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные знаки, доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную собственность, защищены российским законодательством и международными соглашениями об охране авторских прав и интеллектуальной собственности. Указанные на сайте цены не являются публичной офертой (ст. 435 ГК РФ).</div>
+					<div class="footer__privacy-policy-wrapper">
+						<div class="footer__privacy-policy-info"><a class="footer__privacy-policy" href="#">Политика конфиденциальности</a><a class="footer__privacy-policy-map" href="#">Карта сайта</a></div><a class="footer__privacy-policy-img-wrapper" href="#"><img class="footer__privacy-policy-img" src="/images/metaloteka-font-logo.svg" alt="metaloteka-font-logo" /></a><a class="footer__privacy-policy-web" href="#">Сайт разработан веб-студией Брэнд Бэйкер</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup" data-popup="authorization">
+			<div class="popup-authorization popup__body">
+				<div class="popup-authorization__title">Вход в личный кабинет</div>
+				<div class="popup-authorization__line"></div>
+				<form class="popup-authorization__form"><label class="popup-authorization__field-item"><input required="required" /><span>Фамилия Имя</span></label><label class="popup-authorization__field-item"><input required="required" type="number" /><span>ИНН</span></label><label class="popup-authorization__field-item"><input required="required" type="email" /><span>E-mail</span></label><label class="popup-authorization__field-item"><input required="required" type="password" /><span>Пароль</span></label><label class="popup-authorization__field-item"><input required="required" type="tel" /><span>Моб. телефон</span></label><button class="popup-authorization__button-password">Вход</button></form><button class="popup__close">Закрыть</button>
 			</div>
 		</div>
-	</main>
-	<div class="bg-footer">
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__footer-top">
-					<div class="footer__metaloteka-icons">
-						<div class="footer__icons-font"><img class="footer__logo" src="/images/metaloteka-logo.svg" alt="логотип metaloteka" />
-							<p class="footer__icon-subtitle">Металлопрокат оптом и в розницу</p>
-						</div><a class="footer__metaloteka-logo" href="#"><img class="footer__metaloteka-logo_item" src="/images/logo.svg" alt="Logo" /></a>
-						<div class="footer__social"><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-mail.svg" alt="Mail" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-vk.svg" alt="Vk" /></a><a class="footer__clients-item" href="#"><img class="footer__social-item" src="/images/logo-tg.svg" alt="Telegram" /></a></div>
-					</div>
-					<div class="footer__clients">
-						<h2 class="footer__clients-title">Клиентам</h2><a class="footer__clients-item" href="#">О компании</a><a class="footer__clients-item" href="#">Каталог продукции</a><a class="footer__clients-item" href="#">Прайс-лист</a><a class="footer__clients-item" href="#">Доставка</a><a class="footer__clients-item" href="#">Оплата</a><a class="footer__clients-item" href="#">Сотрудничество</a><a class="footer__clients-item" href="#">Оптовые продажи</a><a class="footer__clients-item" href="#">Реквезиты организации</a><a class="footer__clients-item" href="/contacts.html">Контакты</a>
-					</div>
-					<div class="footer__catalog">
-						<h2 class="footer__catalog-title">Каталог</h2><a class="footer__catalog-item" href="#">Листовой прокат</a><a class="footer__catalog-item" href="#"> Арматурный прокат</a><a class="footer__catalog-item" href="#"> Метизная продукция</a><a class="footer__catalog-item" href="#"> Трубный прокат</a><a class="footer__catalog-item" href="#"> Нержавеющая сталь</a><a class="footer__catalog-item" href="#"> Цветные металлы</a>
-					</div>
-					<div class="footer__contacts">
-						<div class="footer__address-wrapper">
-							<p class="footer__subtitle" href="">Москва</p>
-							<p class="footer__messenger-title">г.Москва, ул.Воскресенская, 84 Бизнес-центр «Чистые пруды»</p>
-						</div>
-						<div class="footer__address-wrapper"><a class="footer__subtitle" href="+74955456420">+7 495 545 64 20</a>
-							<p class="footer__messenger-subtitle">Телефон клиентской поддержки</p>
-						</div>
-						<div class="footer__address-wrapper"><a class="footer__subtitle" href="client@metaloteka.ru">client@metaloteka.ru</a>
-							<p class="footer__messenger-subtitle">Адрес электронной почты</p>
-						</div>
-						<div class="footer__address-wrapper">
-							<p class="footer__subtitle" href="">Whatsapp |</p>
-							<p class="footer__messenger-subtitle">Напишите нам в мессенджер</p>
-						</div>
-					</div>
-				</div>
-				<div class="footer__requesites">
-					<div class="footer__requesites-info"><img class="footer__requesites-img" src="/images/icon-ruble.svg" alt="iconRuble" />
-						<div class="footer__individuals"><span class="footer__title-individuals">Физические лица</span><span class="footer__subtitle-individuals">Вы можете оплатить заказ наличными в нашем офисе или онлайн</span></div>
-						<div class="footer__legal-entities"><span class="footer__title-individuals">ИП и ООО</span><span class="footer__subtitle-individuals">Вы можете оплатить по сформированному счету после оформления заказа</span></div>
-					</div>
-					<div class="footer__bank-icons"><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/logo-sberbank.svg" alt="logo-sberbank" /></a><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/payment-logo-sbp.svg" alt="payment-logo-sbp" /></a><a class="footer__clients-item" href="#"><img class="footer__logo-bank" src="/images/logo-mirlogo.svg" alt="logo-mirlogo" /></a></div><button class="footer__button">Написать</button>
-				</div>
-				<div class="footer__info-metaloteka">Metaloteka, 2021. Все ресурсы сайта www.metaloteka.ru, включая (но не ограничиваясь) текстовую, графическую, фотографическую и видео информацию, структуру, дизайн и оформление страниц, товарные знаки, доменное имя, фирменное наименование являются объектами авторского права и прав на интеллектуальную собственность, защищены российским законодательством и международными соглашениями об охране авторских прав и интеллектуальной собственности. Указанные на сайте цены не являются публичной офертой (ст. 435 ГК РФ).</div>
-				<div class="footer__privacy-policy-wrapper">
-					<div class="footer__privacy-policy-info"><a class="footer__privacy-policy" href="#">Политика конфиденциальности</a><a class="footer__privacy-policy-map" href="#">Карта сайта</a></div><a class="footer__privacy-policy-img-wrapper" href="#"><img class="footer__privacy-policy-img" src="/images/metaloteka-font-logo.svg" alt="metaloteka-font-logo" /></a><a class="footer__privacy-policy-web" href="#">Сайт разработан веб-студией Брэнд Бэйкер</a>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<div class="popup" data-popup="authorization">
-		<div class="popup-authorization popup__body">
-			<div class="popup-authorization__title">Вход в личный кабинет</div>
-			<div class="popup-authorization__line"></div>
-			<form class="popup-authorization__form"><label class="popup-authorization__field-item"><input required="required" /><span>Фамилия Имя</span></label><label class="popup-authorization__field-item"><input required="required" type="number" /><span>ИНН</span></label><label class="popup-authorization__field-item"><input required="required" type="email" /><span>E-mail</span></label><label class="popup-authorization__field-item"><input required="required" type="password" /><span>Пароль</span></label><label class="popup-authorization__field-item"><input required="required" type="tel" /><span>Моб. телефон</span></label><button class="popup-authorization__button-password">Вход</button></form><button class="popup__close">Закрыть</button>
-		</div>
-	</div>
-	<script defer="defer" src="/js/app.js"></script>
-</body>
-<link href="/css/app.css" rel="stylesheet">
-</head>
+		<script defer="defer" src="/js/app.js"></script>
+	</body>
+
+</html>
